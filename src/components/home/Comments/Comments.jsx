@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 const Presentation = (props) => {
+	const { t } = useTranslation();
 	if (!props.comments) {
 		return null;
 	}
@@ -16,13 +17,12 @@ const Presentation = (props) => {
 			}
 		}
 	}
-	const { t } = useTranslation();
 
-	const buttonLabel = t("review.comments", { n: $review.comments.length } );
+	const buttonLabel = t("review.comments", { n: props.comments.length } );
 
 	const comments = props.comments.map((c, idx) => {
 		return (
-			<p key={idx}><strong>{t("comments.id", {id: comment.typeOfAccount})}</strong>{c.content}</p>
+			<p key={idx}><strong>{t("comments.id", {id: c.typeOfAccount})}</strong>{c.content}</p>
 		);
 	});
 	return (

@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Presentation from "./ReviewFrom.jsx"
+import Presentation from "./ReviewForm.jsx"
 
 const mapStateToProps = (state) => {
 	return {

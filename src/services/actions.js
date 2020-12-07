@@ -1,14 +1,8 @@
 // Actions for query
-const LIST_FEATURES = "LIST_FEATURES";
-const LIST_REVIEW = "LIST_REVIEW";
-const ERR_GET_REVIEW = "ERR_GET_REVIEW";
-const CLEAR_REVIEW = "CLEAR_REVIEW";
-const LIST_DEFECTS = "LIST_DEFECTS";
-
-export {
-	LIST_FEATURES,
-	LIST_REVIEW,
-	ERR_GET_REVIEW,
-	CLEAR_REVIEW,
-	LIST_DEFECTS
-};
+export const LIST_FEATURES = "LIST_FEATURES";
+export const LIST_REVIEW = "LIST_REVIEW";
+export const CLEAR_REVIEW = "CLEAR_REVIEW";
+export const LIST_DEFECTS = "LIST_DEFECTS";
+// Actions for session
+export const LOGIN = "LOGIN";
+export const LOGOUT = "LOGOUT";

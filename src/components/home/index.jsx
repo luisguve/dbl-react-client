@@ -8,13 +8,15 @@ import ContainerFeatures from "./Features/Container";
 
 const Home = () => {
 	return (
-		<ContainerQuery />
-		<ContainerReview />
-		<ContainerSamples />
-		<ContainerDefects />
-		<ContainerComments />
-		<ContainerFeatures />
-		<ContainerReviewForm />
+		<div>
+			<ContainerQuery />
+			<ContainerReview />
+			<ContainerSamples />
+			<ContainerDefects />
+			<ContainerComments />
+			<ContainerFeatures />
+			<ContainerReviewForm />
+		</div>
 	);
 }
 

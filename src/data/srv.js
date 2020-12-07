@@ -1,1 +1,2 @@
-export default const srvAddr = "http://localhost:8000";
+const srvAddr = "http://localhost:8000";
+export default srvAddr;

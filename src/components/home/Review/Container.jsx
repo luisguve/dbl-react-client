@@ -12,4 +12,6 @@ const mapStateToProps = (state) => {
 
 // ContainerReview doesn't need to dispatch anything.
 
-export default const ContainerReview = connect(mapStateToProps, null)(Presentation);
+const ContainerReview = connect(mapStateToProps, null)(Presentation);
+
+export default ContainerReview;

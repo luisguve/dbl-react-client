@@ -1,7 +1,6 @@
-import designYears from "./../../../data/design";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import { srvAddr } from "./../../../data/srv";
+import srvAddr from "./../../../data/srv";
 
 const ratings = [5, 4, 3, 2, 1];
 
@@ -9,18 +8,19 @@ const goodReview = "Good review";
 const badReview = "Bad review";
 
 const Presentation = (props) => {
-	if (!props.billInfo) {
-		return null;
-	}
 	const { t } = useTranslation();
-	if (!props.isLoggedIn) {
-		return <h1>{t("reviewForm.askForLogin")}</h1>;
-	}
 	const [ typeOfReview, setTypeOfReview ] = useState(goodReview);
 	const [ comment, setComment ] = useState("");
 	const [ defects, setDefects ] = useState([]);
 	const [ rating, setRating ] = useState(ratings[0]);
 	const [ errMsg, setErrMsg ] = useState("");
+
+	if (!props.billInfo) {
+		return null;
+	}
+	if (!props.isLoggedIn) {
+		return <h1>{t("reviewForm.askForLogin")}</h1>;
+	}
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -46,7 +46,7 @@ const Presentation = (props) => {
 			if (res.ok) {
 				alert("Review sent");
 			} else {
-				if (res.status == 409) {
+				if (res.status === 409) {
 					setErrMsg(t("reviewForm.alreadyReviewed"));
 				} else {
 					setErrMsg(await res.text());
@@ -70,11 +70,11 @@ const Presentation = (props) => {
 				break;
 			}
 		}
-		if !found {
+		if (!found) {
 			setDefects([...defects, e.target.value]);
 		} else {
-			const result = defects.slice(0, i);
-			result.concat(defects.slice(i + 1));
+			const result = defects.slice(0, idx);
+			result.concat(defects.slice(idx + 1));
 			setDefects(result);
 		}
 	};
@@ -106,33 +106,34 @@ const Presentation = (props) => {
 	);
 	const ratingOptions = ratings.map((rating, idx) => {
 		return <option key={idx} value={rating}>{rating} / 5</option>
-	})
+	});
 	const defectOptions = props.possibleDefects.map((defect, idx) => {
 		let checked = false;
 		for (const d of defects) {
 			if (d === defect.key) {
-				checked true;
+				checked = true;
 			}
 		}
 		const samples = defect.img.map((img, idx) => {
 			const src = `images/${img}`
 			return <img alt="" src={src} key={idx}/>
 		})
+		const className = "defect " + idx % 2 === 0 ? "even": "odd";
 		return (
-			<div className="defect {idx % 2 == 0 ? "even": "odd"}" key={idx}>
+			<div className={className} key={idx}>
 				<h3>{defect.label}</h3>
 				<label>
 					<input type="checkbox" onChange={handleChangeDefects}
 						value={defect.key} checked={checked} />
 					<div className="desc">
 						<div className="samples">{samples}</div>
-						<p dangerouslySetInnerHtml={{__html: defect.desc}} />
+						<p dangerouslySetInnerHTML={{__html: defect.desc}} />
 					</div>
 				</label>
 			</div>
 		)
 	});
-	const reviewInput = typeOfReview == goodReview ? (
+	const reviewInput = typeOfReview === goodReview ? (
 		<div className="container">
 			<div className="row row-70">
 				<label>

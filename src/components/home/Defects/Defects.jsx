@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 const Presentation = (props) => {
+	const { t } = useTranslation();
 	if (!props.defects) {
 		return null;
 	}
@@ -11,25 +12,23 @@ const Presentation = (props) => {
 			const src = `images/${img}`;
 			return (
 				<div key={idx}>
-					<img alt="" src={src}>
+					<img alt="" src={src} />
 				</div>
 			)
 		});
 
-		const className = "defect ";
-		idx % 2 == 0 ? className += "even" : className += "odd";
+		const className = "defect " + idx % 2 === 0 ? "even" : "odd";
 		return (
 			<li className={className} key={idx}>
 				<h2>{defect.label}</h2>
 				<div className="feature-content">
 					<div className="samples">{samples}</div>
-					<p dangerouslySetInnerHtml={{__html: defect.desc}} />
+					<p dangerouslySetInnerHTML={{__html: defect.desc}} />
 				</div>
 			</li>
 		);
-	};
+	});
 
-	const { t } = useTranslation();
 	return (
 		<div className="container">
 			<div className="features">

@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { Presentation } from "./Features";
+import Presentation from "./Features";
 
 const mapStateToProps = (state) => {
 	return {

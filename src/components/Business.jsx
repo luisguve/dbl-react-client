@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "./../App.css";
+import React from "react";
 
 const Business = () => {
 	const { t } = useTranslation();

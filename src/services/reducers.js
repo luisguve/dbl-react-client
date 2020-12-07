@@ -1,12 +1,11 @@
-import { useTranslation } from "react-i18next";
-import designYears from "./../data/design";
 // Actions
 import {
 	CLEAR_REVIEW,
 	LIST_REVIEW,
 	LIST_DEFECTS,
 	LIST_FEATURES,
-	ERR_GET_REVIEW
+	LOGIN,
+	LOGOUT
 } from "./actions";
 
 const review = (state = {}, action) => {
@@ -15,10 +14,6 @@ const review = (state = {}, action) => {
 		return {};
 	case LIST_REVIEW:
 		return {...action.review};
-	case ERR_GET_REVIEW:
-		return {
-			errGetReview: action.msg
-		};
 	default:
 		return state;
 	}
@@ -27,10 +22,7 @@ const review = (state = {}, action) => {
 const security = (state = {}, action) => {
 	switch (action.type) {
 	case LIST_FEATURES:
-		const { t } = useTranslation();
-		const { value, series } = action;
-		const designYear = designYears[value][series];
-		const secFeatures = t(`usd-${value}.${designYear}`);
+		const { value, series, secFeatures } = action;
 		return {
 			...secFeatures,
 			value,
@@ -42,8 +34,8 @@ const security = (state = {}, action) => {
 		const { defects } = action;
 		for (let i = 0; i < defects.length; i++) {
 			for (let j = 0; j < state.possibleDefects.length; j++) {
-				if (defects[i] == state.possibleDefects[j].key ||
-					defects[i] == state.possibleDefects[j].label) {
+				if (defects[i] === state.possibleDefects[j].key ||
+					defects[i] === state.possibleDefects[j].label) {
 					defects[i] = state.possibleDefects[j];
 					break;
 				}
@@ -58,6 +50,12 @@ const security = (state = {}, action) => {
 
 const session = (state = {}, action) => {
 	switch (action.type) {
+	case LOGIN:
+		return {
+			...action.data
+		};
+	case LOGOUT:
+		return {};
 	default:
 		return state;
 	}

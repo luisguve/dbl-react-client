@@ -5,7 +5,6 @@ import {
 	LIST_FEATURES,
 	LIST_REVIEW,
 	CLEAR_REVIEW,
-	ERR_GET_REVIEW,
 	LIST_DEFECTS
 } from "./../../../services/actions";
 
@@ -15,11 +14,12 @@ const clearReview = () => {
 		type: CLEAR_REVIEW
 	};
 };
-const listFeatures = (value, series) => {
+const listFeatures = (value, series, secFeatures) => {
 	return {
 		type: LIST_FEATURES,
 		value,
-		series
+		series,
+		secFeatures
 	};
 };
 const listReview = (r) => {
@@ -48,12 +48,6 @@ const listDefects = (defects) => {
 		defects
 	};
 };
-const gotErrReview = (msg) => {
-	return {
-		type: ERR_GET_REVIEW,
-		msg
-	};
-};
 
 const mapStateToProps = (state) => {
 	return {
@@ -66,25 +60,26 @@ const mapDispatchToProps = (dispatch) => {
 		clearReview: () => {
 			dispatch(clearReview());
 		},
-		listFeatures: (value, series) => {
-			dispatch(listFeatures(value, series));
+		listFeatures: (value, series, features) => {
+			dispatch(listFeatures(value, series, features));
 		},
 		listReview: (r) => {
 			dispatch(listReview(r));
 		},
 		listDefects: (d) => {
 			dispatch(listDefects(d));
-		},
-		gotErr: (msg) => {
-			dispatch(gotErrReview(msg));
 		}
 	};
 };
 
-export default const ContainerQuery = connect(mapStateToProps, mapDispatchToProps)(Query);
+const ContainerQuery = connect(mapStateToProps, mapDispatchToProps)(Presentation);
+
+export default ContainerQuery;
 
 function setComments(r) {
-	if (!r.businessReviews || !r.userReviews) {
+	const BR = r.businessReviews;
+	const UR = r.userReviews
+	if (!BR || !UR) {
 		return null;
 	}
 	const comments = [];
@@ -97,93 +92,114 @@ function setComments(r) {
 			comments.push(comment);
 		}
 	};
-	r.businessReviews.goodReviews.map(rv => appendComment(rv.comment, "business"));
-	r.businessReviews.badReviews.map(rv => appendComment(rv.comment, "business"));
-
-	r.userReviews.goodReviews.map(rv => appendComment(rv.comment, "user"));
-	r.userReviews.badReviews.map(rv => appendComment(rv.comment, "user"));
+	if (BR.goodReviews) {
+		BR.goodReviews.map(rv => appendComment(rv.comment, "business"));
+	}
+	if (BR.badReviews) {
+		BR.badReviews.map(rv => appendComment(rv.comment, "business"));
+	}
+	if (UR.goodReviews) {
+		UR.goodReviews.map(rv => appendComment(rv.comment, "user"));
+	}
+	if (UR.badReviews) {
+		UR.badReviews.map(rv => appendComment(rv.comment, "user"));
+	}
 
 	return comments;
 }
 
 // Build markerLocations array with values from business and user reviews.
 function setMarkerLocations(r) {
-	if (!r.businessReviews || !r.userReviews) {
+	const BR = r.businessReviews;
+	const UR = r.userReviews
+	if (!BR || !UR) {
 		return null;
 	}
 	const markerLocationsKeys = {};
-	r.businessReviews.goodReviews.map(rv => {
-		const key = rv.location.latt + "," + rv.location.longt;
-		if (key in markerLocationsKeys) {
-			markerLocationsKeys[key].businessReviews.goodReviews++;
-		} else {
-			markerLocationsKeys[key] = {
-				coords: [rv.location.latt, rv.location.longt],
-				userReviews: {
-					goodReviews: 0,
-					badReviews: 0
-				},
-				businessReviews: {
-					goodReviews: 1,
-					badReviews: 0
-				}
-			};
-		}
-	});
-	r.businessReviews.badReviews.map(rv => {
-		const key = rv.location.latt + "," + rv.location.longt;
-		if (key in markerLocationsKeys) {
-			markerLocationsKeys[key].businessReviews.badReviews++;
-		} else {
-			markerLocationsKeys[key] = {
-				coords: [rv.location.latt, rv.location.longt],
-				userReviews: {
-					goodReviews: 0,
-					badReviews: 0
-				},
-				businessReviews: {
-					goodReviews: 0,
-					badReviews: 1
-				}
-			};
-		}
-	});
-	r.userReviews.goodReviews.map(rv => {
-		const key = rv.location.latt + "," + rv.location.longt;
-		if (key in markerLocationsKeys) {
-			markerLocationsKeys[key].userReviews.goodReviews++;
-		} else {
-			markerLocationsKeys[key] = {
-				coords: [rv.location.latt, rv.location.longt],
-				userReviews: {
-					goodReviews: 1,
-					badReviews: 0
-				},
-				businessReviews: {
-					goodReviews: 0,
-					badReviews: 0
-				}
-			};
-		}
-	});
-	r.userReviews.badReviews.map(rv => {
-		const key = rv.location.latt + "," + rv.location.longt;
-		if (key in markerLocationsKeys) {
-			markerLocationsKeys[key].userReviews.badReviews++;
-		} else {
-			markerLocationsKeys[key] = {
-				coords: [rv.location.latt, rv.location.longt],
-				userReviews: {
-					goodReviews: 0,
-					badReviews: 1
-				},
-				businessReviews: {
-					goodReviews: 0,
-					badReviews: 0
-				}
-			};
-		}
-	});
+	if (BR.goodReviews) {
+		BR.goodReviews.map(rv => {
+			const key = rv.location.latt + "," + rv.location.longt;
+			if (key in markerLocationsKeys) {
+				markerLocationsKeys[key].businessReviews.goodReviews++;
+			} else {
+				markerLocationsKeys[key] = {
+					coords: [rv.location.latt, rv.location.longt],
+					userReviews: {
+						goodReviews: 0,
+						badReviews: 0
+					},
+					businessReviews: {
+						goodReviews: 1,
+						badReviews: 0
+					}
+				};
+			}
+			return null
+		});
+	}
+	if (BR.badReviews) {
+		BR.badReviews.map(rv => {
+			const key = rv.location.latt + "," + rv.location.longt;
+			if (key in markerLocationsKeys) {
+				markerLocationsKeys[key].businessReviews.badReviews++;
+			} else {
+				markerLocationsKeys[key] = {
+					coords: [rv.location.latt, rv.location.longt],
+					userReviews: {
+						goodReviews: 0,
+						badReviews: 0
+					},
+					businessReviews: {
+						goodReviews: 0,
+						badReviews: 1
+					}
+				};
+			}
+			return null
+		});
+	}
+	if (UR.goodReviews) {
+		UR.goodReviews.map(rv => {
+			const key = rv.location.latt + "," + rv.location.longt;
+			if (key in markerLocationsKeys) {
+				markerLocationsKeys[key].userReviews.goodReviews++;
+			} else {
+				markerLocationsKeys[key] = {
+					coords: [rv.location.latt, rv.location.longt],
+					userReviews: {
+						goodReviews: 1,
+						badReviews: 0
+					},
+					businessReviews: {
+						goodReviews: 0,
+						badReviews: 0
+					}
+				};
+			}
+			return null
+		});
+	}
+	if (UR.badReviews) {
+		UR.badReviews.map(rv => {
+			const key = rv.location.latt + "," + rv.location.longt;
+			if (key in markerLocationsKeys) {
+				markerLocationsKeys[key].userReviews.badReviews++;
+			} else {
+				markerLocationsKeys[key] = {
+					coords: [rv.location.latt, rv.location.longt],
+					userReviews: {
+						goodReviews: 0,
+						badReviews: 1
+					},
+					businessReviews: {
+						goodReviews: 0,
+						badReviews: 0
+					}
+				};
+			}
+			return null
+		});
+	}
 
 	// Convert marker locations object into an array.
 	const markerLocations = [];
