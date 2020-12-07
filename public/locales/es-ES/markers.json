@@ -1,0 +1,13 @@
+{
+	"markers": {
+		"businessGoodReviews": "{n, plural, =1 {# negocio autenticó este billete} other {# negocios autenticaron este billete}}",
+		"businessBadReviews": "{n, plural, =1 {# negocio notó defectos en este billete} other {# negocios notaron defectos este billete}}",
+		"userGoodReviews": "{n, plural, =1 {# usuario autenticó este billete} other {# usuarios autenticaron este billete}}",
+		"userBadReviews": "{n, plural, =1 {# usuario notó defectos en este billete} other {# usuarios notaron defectos en este billete}}",
+		"summary": {
+			"total": "total",
+			"good": "buenas",
+			"bad": "malas"
+		}
+	}
+}

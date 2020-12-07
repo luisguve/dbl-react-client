@@ -1,0 +1,13 @@
+﻿{
+	"nav": {
+		"login": "login",
+		"signup": "signup",
+		"username": "User",
+		"password": "Password",
+		"submit": "Send",
+		"logout": "Logout",
+		"business": "Are you a business? Signup here",
+		"about": "About",
+		"home": "Home"
+	}
+}

@@ -1,0 +1,16 @@
+﻿{
+	"review": {
+		"noReviews": "This banknote has no reviews yet.",
+		"totalReviews": "{n, plural, =1 {# review} other {# reviews}}",
+		"userGoodReviews": "{n, plural, =1 {# user indicated} other {# users indicated}} that this banknote is authentic",
+		"userBadReviews": "{n, plural, =1 {# user indicated} other {# users indicated}} defects on this banknote",
+		"businessGoodReviews": "{n, plural, =1 {# business indicated} other {# businesses indicated}} that this banknote is authentic",
+		"businessBadReviews": "{n, plural, =1 {# business indicated} other {# businesses indicated}} defects on this banknote",
+		"rating": "Rating",
+		"moreInfo": "Login to see more information about who reviewed this banknote",
+		"comments": "{n, plural, =1 {# comment} other {# comments}}",
+		"myGoodReview": "You indicated that this banknote has no defects on {date} with a rating of {rating}",
+		"myBadReview": "You indicated some defects on this banknote on {date}",
+		"defectsHeading": "Users found the following defects on this banknote"
+	}
+}

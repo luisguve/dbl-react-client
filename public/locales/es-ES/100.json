@@ -1,0 +1,377 @@
+{
+	"usd-100": {
+		"1929": {
+			"front": "notes/100/1929/front.png",
+			"back": "notes/100/1929/back.png",
+			"features": [
+				{
+					"label": "Sello negro",
+					"desc": "Hay un sello del Banco de la Reserva Federal en color negro, a la izquierda del retrato, con el nombre del Banco distribuidor de la Reserva Federal.",
+					"img": ["notes/100/1929/ft-black-seal.png"]
+				}, {
+					"label": "Impresión de relieve",
+					"desc": "El traje del retrato está impreso con textura de relieve.",
+					"img": ["notes/100/1929/ft-raised-printing.png"]
+				}, {
+					"label": "Papel",
+					"desc": "El material del papel está compuesto por un cuarto de lino y tres cuartos de algodón, y tiene pequeñas fibras azules y rojas dispersas en el billete.",
+					"img": ["notes/100/1929/ft-paper.png"]
+				}, {
+					"label": "Retrato y viñeta",
+					"desc": "Hay un retrato de Benjamin Franklin en la cara del billete, y una viñeta del Salón de la Independencia en el reverso.",
+					"img": ["notes/100/1929/ft-portrait.png", "notes/100/1929/ft-vignette.png"]
+				}, {
+					"label": "Sello verde",
+					"desc": "Hay un sello del Departamento del Tesoro de los Estados Unidos en verde, a la derecha del retrato.",
+					"img": ["notes/100/1929/ft-treasury-seal.png"]
+				}, {
+					"label": "Número de serial",
+					"desc": "El número de serial está compuesto por una combinación de letras y números, y aparece dos veces en la cara del billete.",
+					"img": ["notes/100/1929/ft-serial-numbers.png"]
+				}
+			],
+			"possibleDefects": [
+				{
+					"label": "Sello negro",
+					"desc": "El sello del Banco de la Reserva Federal no corresponde o no está en el lugar indicado",
+					"img": ["notes/100/1929/ft-black-seal.png"],
+					"key": "ft-black-seal"
+				}, {
+					"label": "Impresión de relieve",
+					"desc": "El billete no tiene textura de relieve en el traje del retrato.",
+					"img": ["notes/100/1929/ft-raised-printing.png"],
+					"key": "ft-raised-printing"
+				}, {
+					"label": "Papel",
+					"desc": "El papel no corresponde o no tiene pequeñas fibras azules y rojas dispersas en el billete.",
+					"img": ["notes/100/1929/ft-paper.png"],
+					"key": "ft-paper"
+				}, {
+					"label": "Retrato y viñeta",
+					"desc": "El retrato en la cara del billete o la viñeta en el reverso no corresponden.",
+					"img": ["notes/100/1929/ft-portrait.png", "notes/100/1929/ft-vignette.png"],
+					"key": "ft-portrait"
+				}, {
+					"label": "Sello verde",
+					"desc": "El sello del Departamento del Tesoro de los Estados Unidos no corresponde o no está en el lugar indicado.",
+					"img": ["notes/100/1929/ft-treasury-seal.png"],
+					"key": "ft-treasury-seal"
+				}, {
+					"label": "Número de serial",
+					"desc": "El número de serial está mal impreso o no tiene el formato adecuado.",
+					"img": ["notes/100/1929/ft-serial-numbers.png"],
+					"key": "ft-serial-numbers"
+				}
+			]
+		},
+		"1990": {
+			"front": "notes/100/1990/front.png",
+			"back": "notes/100/1990/back.png",
+			"keyFeatures": [
+				{
+					"label": "Hilo de seguridad",
+					"desc": "Observa el billete a contraluz, debería haber un hilo vertical incrustado, a la izquierda del retrato. El hilo está impreso con el texto \"USA 100\", y es visible desde ambos lados del billete. El hilo se torna color rosa cuando se ilumina con una luz ultravioleta.",
+					"img": ["notes/100/1990/ft-thread.png"]
+				}, {
+					"label": "Microtexto",
+					"desc": "Observa con una lupa el borde exterior del marco del retrato, debería tener el texto \"THE UNITED STATES OF AMERICA\" en letras muy pequeñas.",
+					"img": ["notes/100/1990/ft-microprinting.png"]
+				}
+			],
+			"features": [
+				{
+					"label": "Sello negro",
+					"desc": "Hay un sello del Banco de la Reserva Federal en color negro, a la izquierda del retrato, con el nombre del Banco distribuidor de la Reserva Federal. La letra impresa debe coincidir con la primera letra del número de serial.",
+					"img": ["notes/100/1990/ft-black-seal.png"]
+				}, {
+					"label": "Impresión de relieve",
+					"desc": "El traje del retrato está impreso con textura de relieve.",
+					"img": ["notes/100/1990/ft-raised-printing.png"]
+				}, {
+					"label": "Papel",
+					"desc": "El material del papel está compuesto por un cuarto de lino y tres cuartos de algodón, y tiene pequeñas fibras azules y rojas dispersas en el billete.",
+					"img": ["notes/100/1990/ft-paper.png"]
+				}, {
+					"label": "Retrato y viñeta",
+					"desc": "Hay un retrato de Benjamin Franklin en la cara del billete, y una viñeta del Salón de la Independencia en el reverso.",
+					"img": ["notes/100/1990/ft-portrait.png", "notes/100/1990/ft-vignette.png"]
+				}, {
+					"label": "Sello verde",
+					"desc": "Hay un sello del Departamento del Tesoro de los Estados Unidos en verde, a la derecha del retrato.",
+					"img": ["notes/100/1990/ft-treasury-seal.png"]
+				}, {
+					"label": "Número de serial",
+					"desc": "El número de serial está compuesto por una combinación única de 11 letras y números, y aparece dos veces en la cara del billete.",
+					"img": ["notes/100/1990/ft-serial-numbers.png"]
+				}
+			],
+			"possibleDefects": [
+				{
+					"label": "Hilo de seguridad",
+					"desc": "El hilo no está incrustado, no tiene el formato adecuado o no se torna color rosa cuando se ilumina con una luz ultravioleta.",
+					"img": ["notes/100/1990/ft-thread.png"],
+					"key": "ft-thread"
+				}, {
+					"label": "Microtexto",
+					"desc": "No está el microtexto \"THE UNITED STATES OF AMERICA\" en el borde exterior del marco del retrato, o está mal impreso.",
+					"img": ["notes/100/1990/ft-microprinting.png"],
+					"key": "ft-microprinting"
+				}, {
+					"label": "Sello negro",
+					"desc": "El sello del Banco de la Reserva Federal no corresponde o no está en el lugar indicado",
+					"img": ["notes/100/1990/ft-black-seal.png"],
+					"key": "ft-black-seal"
+				}, {
+					"label": "Impresión de relieve",
+					"desc": "El billete no tiene textura de relieve en el traje del retrato.",
+					"img": ["notes/100/1990/ft-raised-printing.png"],
+					"key": "ft-raised-printing"
+				}, {
+					"label": "Papel",
+					"desc": "El papel no corresponde o no tiene pequeñas fibras azules y rojas dispersas en el billete.",
+					"img": ["notes/100/1990/ft-paper.png"],
+					"key": "ft-paper"
+				}, {
+					"label": "Retrato y viñeta",
+					"desc": "El retrato en la cara del billete o la viñeta en el reverso no corresponden.",
+					"img": ["notes/100/1990/ft-portrait.png", "notes/100/1990/ft-vignette.png"],
+					"key": "ft-portrait"
+				}, {
+					"label": "Sello verde",
+					"desc": "El sello del Departamento del Tesoro de los Estados Unidos no corresponde o no está en el lugar indicado.",
+					"img": ["notes/100/1990/ft-treasury-seal.png"],
+					"key": "ft-treasury-seal"
+				}, {
+					"label": "Número de serial",
+					"desc": "El número de serial está mal impreso o no tiene el formato adecuado.",
+					"img": ["notes/100/1990/ft-serial-numbers.png"],
+					"key": "ft-serial-numbers"
+				}
+			]
+		},
+		"1996": {
+			"front": "notes/100/1996/front.jpg",
+			"back": "notes/100/1996/back.jpg",
+			"keyFeatures": [
+				{
+					"label": "Hilo de seguridad",
+					"desc": "Observa el billete a contraluz, debería haber un hilo vertical incrustado, a la izquierda del retrato. El hilo está impreso con el texto \"USA 100\" y una pequeña bandera, y es visible desde ambos lados del billete. El hilo se torna color rosa cuando se ilumina con una luz ultravioleta.",
+					"img": ["notes/100/1996/ft-thread.png"]
+				}, {
+					"label": "Marca de agua",
+					"desc": "Observa el billete a contraluz, debería haber una imagen de Benjamin Franklin en el espacio en blanco a la derecha del retrato, y es visible desde ambos lados del billete.",
+					"img": ["notes/100/1996/ft-watermark.png"]
+				}, {
+					"label": "Tinta que cambia de color",
+					"desc": "Inclina el billete hacia adelante y hacia atrás y observa el número 100 en la esquina inferior derecha en la cara del billete, debería cambiar de un color verde a negro.",
+					"img": ["notes/100/1996/ft-color-shifting-ink.png"]
+				}
+			],
+			"features": [
+				{
+					"label": "Sello negro",
+					"desc": "Hay un sello del Sistema de la Reserva Federal en negro, a la izquierda del retrato. Una letra y un número cerca del sello indica el Banco distribuidor de la Reserva Federal.",
+					"img": ["notes/100/1996/ft-black-seal.jpg"]
+				}, {
+					"label": "Microtexto",
+					"desc": "Observa el billete con una lupa, debería tener los siguientes textos en letra muy pequeña y bien impresa:<ul><li>\"USA 100\" repetido dentro del número 100 en la esquina inferior izquierda.</li><li>\"THE UNITED STATES OF AMERICA\" en la solapa izquierda del saco de Benjamin Franklin.</li></ul>",
+					"img": ["notes/100/1996/ft-microprinting-1.jpg","notes/100/1996/ft-microprinting-2.jpg"]
+				}, {
+					"label": "Impresión de relieve",
+					"desc": "El traje del retrato está impreso con textura de relieve.",
+					"img": ["notes/100/1996/ft-raised-printing.jpg"]
+				}, {
+					"label": "Papel",
+					"desc": "El material del papel está compuesto por un cuarto de lino y tres cuartos de algodón, y tiene pequeñas fibras azules y rojas dispersas en el billete.",
+					"img": ["notes/100/1996/ft-paper.jpg"]
+				}, {
+					"label": "Retrato y viñeta",
+					"desc": "Hay un retrato de Benjamin Franklin en la cara del billete, y una viñeta del Salón de la Independencia en el reverso.",
+					"img": ["notes/100/1996/ft-portrait.jpg"]
+				}, {
+					"label": "Sello verde",
+					"desc": "Hay un sello del Departamento del Tesoro de los Estados Unidos en verde, a la derecha del retrato.",
+					"img": ["notes/100/1996/ft-treasury-seal.jpg"]
+				}, {
+					"label": "Número de serial",
+					"desc": "El número de serial está compuesto por una combinación única de 11 letras y números, y aparece dos veces en la cara del billete.",
+					"img": ["notes/100/1996/ft-serial-numbers.jpg"]
+				}
+			],
+			"possibleDefects": [
+				{
+					"label": "Hilo de seguridad",
+					"desc": "El hilo no está incrustado, no tiene el formato adecuado o no se torna color rosa cuando se ilumina con una luz ultravioleta.",
+					"img": ["notes/100/1996/ft-thread.png"],
+					"key": "ft-thread"
+				}, {
+					"label": "Marca de agua",
+					"desc": "La marca de agua no está, no se ve desde ambos lados del billete o no coincide con el retrato.",
+					"img": ["notes/100/1996/ft-watermark.png"],
+					"key": "ft-watermark"
+				}, {
+					"label": "Tinta que cambia de color",
+					"desc": "La tinta no cambia de verde a negro.",
+					"img": ["notes/100/1996/ft-color-shifting-ink.png"],
+					"key": "ft-color-shifting-ink"
+				}, {
+					"label": "Sello negro",
+					"desc": "El sello del Sistema de la Reserva Federal no corresponde o no está en el lugar indicado",
+					"img": ["notes/100/1990/ft-black-seal.jpg"],
+					"key": "ft-black-seal"
+				}, {
+					"label": "Microtexto",
+					"desc": "No está el microtexto \"USA 100\" repetido en el número 100 de la esquina inferior izquierda o el microtexto \"THE UNITED STATES OF AMERICA\" en la solapa izquierda del saco de Benjamin Franklin, o está mal impreso.",
+					"img": ["notes/100/1996/ft-microprinting-1.jpg","notes/100/1996/ft-microprinting-2.jpg"],
+					"key": "ft-microprinting"
+				}, {
+					"label": "Impresión de relieve",
+					"desc": "El billete no tiene textura de relieve en el traje del retrato.",
+					"img": ["notes/100/1996/ft-raised-printing.jpg"],
+					"key": "ft-raised-printing"
+				}, {
+					"label": "Papel",
+					"desc": "El papel no corresponde o no tiene pequeñas fibras azules y rojas dispersas en el billete.",
+					"img": ["notes/100/1996/ft-paper.jpg"],
+					"key": "ft-paper"
+				}, {
+					"label": "Retrato y viñeta",
+					"desc": "El retrato en la cara del billete o la viñeta en el reverso no corresponden.",
+					"img": ["notes/100/1996/ft-portrait.jpg"],
+					"key": "ft-portrait"
+				}, {
+					"label": "Sello verde",
+					"desc": "El sello del Departamento del Tesoro de los Estados Unidos no corresponde o no está en el lugar indicado.",
+					"img": ["notes/100/1996/ft-treasury-seal.jpg"],
+					"key": "ft-treasury-seal"
+				}, {
+					"label": "Número de serial",
+					"desc": "El número de serial está mal impreso o no tiene el formato adecuado.",
+					"img": ["notes/100/1996/ft-serial-numbers.jpg"],
+					"key": "ft-serial-numbers"
+				}
+			]
+		},
+		"2013": {
+			"front": "notes/100/2013/front.jpg",
+			"back": "notes/100/2013/back.jpg",
+			"keyFeatures": [
+				{
+					"label": "Hilo de seguridad",
+					"desc": "Observa el billete a contraluz, debería haber un hilo vertical incrustado, a la izquierda del retrato. El hilo está impreso con el texto \"USA 100\" y una pequeña bandera, y es visible desde ambos lados del billete. El hilo se torna color rosa cuando se ilumina con una luz ultravioleta.",
+					"img": ["notes/100/2013/ft-thread.png"]
+				}, {
+					"label": "Cinta 3D",
+					"desc": "<ul><li>Inclina el billete hacia adelante y hacia atrás y observa la cinta azul en el medio del billete, las campanas los números 100 se deben mover de lado a lado.</li><li>Inclina el billete hacia la derecha y hacia la izquierda, las campanas y los números 100 se deben mover hacia arriba y hacia abajo.</li></ul>La cinta azul en el medio del billete está tejida, no impresa.",
+					"img": ["notes/100/2013/ft-3d-ribbon.png"]
+				}, {
+					"label": "Marca de agua",
+					"desc": "Observa el billete a contraluz, debería haber una imagen de Benjamin Franklin en el espacio en blanco a la derecha del retrato, y es visible desde ambos lados del billete.",
+					"img": ["notes/100/2013/ft-watermark.png"]
+				}, {
+					"label": "Tinta que cambia de color",
+					"desc": "Inclina el billete hacia adelante y hacia atrás y observa el número 100 en la esquina inferior derecha en la cara del billete, debería cambiar de un color cobre a verde. Igualmente la campana dentro del tintero.",
+					"img": ["notes/100/2013/ft-color-shifting-ink-1.png", "notes/100/2013/ft-color-shifting-ink-2.png"]
+				}
+			],
+			"features": [
+				{
+					"label": "Sello negro",
+					"desc": "Hay un sello del Sistema de la Reserva Federal en negro, a la izquierda del retrato. Una letra y un número cerca del sello indica el Banco distribuidor de la Reserva Federal.",
+					"img": ["notes/100/2013/ft-black-seal.jpg"]
+				}, {
+					"label": "Microtexto",
+					"desc": "Observa el billete con una lupa, debería tener los siguientes textos en letra muy pequeña y bien impresa:<ul><li>\"THE UNITED STATES OF AMERICA\" en el uello de la chaqueta de Benjamin Franklin</li><li>\"USA 100\" al rededor del espacio en blanco a la derecha del retrato.</li><li>\"ONE HUNDRED USA\" a lo largo de la pluma dorada</li><li>Números 100 en los bordes del billete</li></ul>",
+					"img": ["notes/100/2013/ft-microprinting-1.jpg","notes/100/2013/ft-microprinting-2.jpg"]
+				}, {
+					"label": "Impresión de relieve",
+					"desc": "El traje del retrato está impreso con textura de relieve.",
+					"img": ["notes/100/2013/ft-raised-printing.jpg"]
+				}, {
+					"label": "Papel",
+					"desc": "El material del papel está compuesto por un cuarto de lino y tres cuartos de algodón, y tiene pequeñas fibras azules y rojas dispersas en el billete.",
+					"img": ["notes/100/2013/ft-paper.jpg"]
+				}, {
+					"label": "Retrato y viñeta",
+					"desc": "Hay un retrato de Benjamin Franklin en la cara del billete, y una viñeta del Salón de la Independencia en el reverso.",
+					"img": ["notes/100/2013/ft-portrait.jpg"]
+				}, {
+					"label": "Símbolos en el fondo",
+					"desc": "A la derecha del retrato, tiene extractos de la Declaración de la Independencia y una pluma.",
+					"img": ["notes/100/2013/ft-symbols-of-freedom.jpg"]
+				}, {
+					"label": "Sello verde",
+					"desc": "Hay un sello del Departamento del Tesoro de los Estados Unidos en verde, a la derecha del retrato.",
+					"img": ["notes/100/2013/ft-treasury-seal.jpg"]
+				}, {
+					"label": "Número de serial",
+					"desc": "El número de serial está compuesto por una combinación única de 11 letras y números, y aparece dos veces en la cara del billete.",
+					"img": ["notes/100/2013/ft-serial-numbers.jpg"]
+				}
+			],
+			"possibleDefects": [
+				{
+					"label": "Hilo de seguridad",
+					"desc": "El hilo no está incrustado, no tiene el formato adecuado o no se torna color rosa cuando se ilumina con una luz ultravioleta.",
+					"img": ["notes/100/2013/ft-thread.png"],
+					"key": "ft-thread"
+				}, {
+					"label": "Cinta 3D",
+					"desc": "La cinta 3D no está tejida en el billete, no tiene el formato adecuado o no se mueve correctamente.",
+					"img": ["notes/100/2013/ft-3d-ribbon.png"],
+					"key": "ft-3d-ribbon"
+				}, {
+					"label": "Marca de agua",
+					"desc": "La marca de agua no está, no se ve desde ambos lados del billete o no coincide con el retrato.",
+					"img": ["notes/100/2013/ft-watermark.png"],
+					"key": "ft-watermark"
+				}, {
+					"label": "Tinta que cambia de color",
+					"desc": "La tinta no cambia de cobre a verde.",
+					"img": ["notes/100/2013/ft-color-shifting-ink-1.png", "notes/100/2013/ft-color-shifting-ink-2.png"],
+					"key": "ft-color-shifting-ink"
+				}, {
+					"label": "Sello negro",
+					"desc": "El sello del Sistema de la Reserva Federal no corresponde o no está en el lugar indicado.",
+					"img": ["notes/100/2013/ft-black-seal.jpg"],
+					"key": "ft-black-seal"
+				}, {
+					"label": "Microtexto",
+					"desc": "No está alguno de los microtextos o están mal impresos.",
+					"img": ["notes/100/2013/ft-microprinting-1.jpg","notes/100/2013/ft-microprinting-2.jpg"],
+					"key": "ft-microprinting"
+				}, {
+					"label": "Impresión de relieve",
+					"desc": "El billete no tiene textura de relieve en el traje del retrato.",
+					"img": ["notes/100/2013/ft-raised-printing.jpg"],
+					"key": "ft-raised-printing"
+				}, {
+					"label": "Papel",
+					"desc": "El papel no corresponde o no tiene pequeñas fibras azules y rojas dispersas en el billete.",
+					"img": ["notes/100/2013/ft-paper.jpg"],
+					"key": "ft-paper"
+				}, {
+					"label": "Retrato y viñeta",
+					"desc": "El retrato en la cara del billete o la viñeta en el reverso no corresponden.",
+					"img": ["notes/100/2013/ft-portrait.jpg"],
+					"key": "ft-portrait"
+				}, {
+					"label": "Símbolos en el fondo",
+					"desc": "Falta algún símbolo en el fondo o no está bien impreso.",
+					"img": ["notes/100/2013/ft-symbols-of-freedom.jpg"],
+					"key": "ft-symbols-of-freedom"
+				}, {
+					"label": "Sello verde",
+					"desc": "El sello del Departamento del Tesoro de los Estados Unidos no corresponde o no está en el lugar indicado.",
+					"img": ["notes/100/2013/ft-treasury-seal.jpg"],
+					"key": "ft-treasury-seal"
+				}, {
+					"label": "Número de serial",
+					"desc": "El número de serial está mal impreso o no tiene el formato adecuado.",
+					"img": ["notes/100/2013/ft-serial-numbers.jpg"],
+					"key": "ft-serial-numbers"
+				}
+			]
+		}
+	}
+}

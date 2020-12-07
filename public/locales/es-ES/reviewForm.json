@@ -1,0 +1,22 @@
+{
+	"reviewForm": {
+		"label": "Envía una revisión",
+		"isGenuine": "Es auténtico",
+		"isCounterfeit": "Es falso",
+		"billState": "Estado del billete",
+		"defectsHeading": "Indica los efectos en este billete",
+		"comment": "Comentario público",
+		"details": {
+			"heading": "Incluye detalles privados",
+			"incoming": "Entrada",
+			"outgoing": "Salida",
+			"from": "De",
+			"to": "Para",
+			"subject": "Concepto",
+			"notes": "Notas"
+		},
+		"submit": "Enviar",
+		"askForLogin": "Inicia sesión para enviar una revisión de este billete",
+		"alreadyReviewed": "Solo se permite una revisión de un mismo tipo (buena o mala) por usuario"
+	}
+}

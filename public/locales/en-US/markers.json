@@ -1,0 +1,13 @@
+﻿{
+	"markers": {
+		"businessGoodReviews": "{n, plural, =1 {# business authenticated this banknote} other {# businesses authenticated this banknote}}",
+		"businessBadReviews": "{n, plural, =1 {# business indicated defects on this banknote} other {# businesses indicated defects on this banknote}}",
+		"userGoodReviews": "{n, plural, =1 {# user authenticated this banknote} other {# users authenticated this banknote}}",
+		"userBadReviews": "{n, plural, =1 {# user indicated defects on this banknote} other {# users indicated defects on this banknote}}",
+		"summary": {
+			"total": "total",
+			"good": "good",
+			"bad": "bad"
+		}
+	}
+}

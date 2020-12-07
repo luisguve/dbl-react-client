@@ -1,0 +1,590 @@
+{
+	"usd-50": {
+		"1929": {
+			"back": "notes/50/1929/back.jpg",
+			"features": [
+				{
+					"desc": "A black seal to the left of the portrait bears the name of the distributing Federal Reserve Bank.",
+					"img": [
+						"notes/50/1929/ft-black-seal.jpg"
+					],
+					"label": "Black seal"
+				},
+				{
+					"desc": "Move your finger along the note’s surface to feel the raised printing, which gives genuine Federal Reserve notes their distinctive texture.",
+					"img": [
+						"notes/50/1929/ft-raised-printing.jpg"
+					],
+					"label": "Raised printing"
+				},
+				{
+					"desc": "Federal Reserve note paper is one-fourth linen and three-fourths cotton, and contains red and blue security fibers.",
+					"img": [
+						"notes/50/1929/ft-paper.jpg"
+					],
+					"label": "Paper"
+				},
+				{
+					"desc": "The $50 note features a portrait of President Grant on the front of the note. The vignette on the back of the note features the United States Capitol.",
+					"img": [
+						"notes/50/1929/ft-portrait.jpg",
+						"notes/50/1929/ft-vignette.jpg"
+					],
+					"label": "Portrait and vignette"
+				},
+				{
+					"desc": "A seal to the right of the portrait represents the U.S. Department of the Treasury.",
+					"img": [
+						"notes/50/1929/ft-treasury-seal.jpg"
+					],
+					"label": "Green Seal"
+				},
+				{
+					"desc": "A combination of numbers and letters appears twice on the front of the note.",
+					"img": [
+						"notes/50/1929/ft-serial-numbers.jpg"
+					],
+					"label": "Serial numbers"
+				}
+			],
+			"front": "notes/50/1929/front.jpg",
+			"possibleDefects": [
+				{
+					"desc": "The seal of the Federal Reserve Bank is wrong or is not in the right place.",
+					"img": [
+						"notes/50/1929/ft-black-seal.jpg"
+					],
+					"key": "ft-black-seal",
+					"label": "Black seal"
+				},
+				{
+					"desc": "The note doesn't have raised printing on the surface.",
+					"img": [
+						"notes/50/1929/ft-raised-printing.jpg"
+					],
+					"key": "ft-raised-printing",
+					"label": "Raised printing"
+				},
+				{
+					"desc": "The papel is wrong or doesn't contain small red and blue fibers.",
+					"img": [
+						"notes/50/1929/ft-paper.jpg"
+					],
+					"key": "ft-paper",
+					"label": "Paper"
+				},
+				{
+					"desc": "The portrait or the vignette are wrong.",
+					"img": [
+						"notes/50/1929/ft-portrait.jpg",
+						"notes/50/1929/ft-vignette.jpg"
+					],
+					"key": "ft-portrait",
+					"label": "Portrait and vignette"
+				},
+				{
+					"desc": "The seal of the U.S. Department of the Treasury is wrong or isn't in the right place.",
+					"img": [
+						"notes/50/1929/ft-treasury-seal.jpg"
+					],
+					"key": "ft-treasury-seal",
+					"label": "Green seal"
+				},
+				{
+					"desc": "The serial numbers are badly printed or don't have the right format.",
+					"img": [
+						"notes/50/1929/ft-serial-numbers.jpg"
+					],
+					"key": "ft-serial-numbers",
+					"label": "Serial numbers"
+				}
+			]
+		},
+		"1990": {
+			"back": "notes/50/1990/back.jpg",
+			"features": [
+				{
+					"desc": "A black seal to the left of the portrait which bears the name and corresponding letter of the distributing Federal Reserve Bank.",
+					"img": [
+						"notes/50/1990/ft-black-seal.jpg"
+					],
+					"label": "Black seal"
+				},
+				{
+					"desc": "Move your finger along the note’s surface to feel the raised printing, which gives genuine Federal Reserve notes their distinctive texture.",
+					"img": [
+						"notes/50/1990/ft-raised-printing.jpg"
+					],
+					"label": "Raised printing"
+				},
+				{
+					"desc": "Federal Reserve note paper is one-fourth linen and three-fourths cotton, and contains red and blue security fibers.",
+					"img": [
+						"notes/50/1990/ft-paper.jpg"
+					],
+					"label": "Paper"
+				},
+				{
+					"desc": "The $50 note features a portrait of President Grant on the front of the note. The vignette on the back of the note features the United States Capitol.",
+					"img": [
+						"notes/50/1990/ft-portrait.jpg",
+						"notes/50/1990/ft-vignette.jpg"
+					],
+					"label": "Portrait and vignette"
+				},
+				{
+					"desc": "A seal to the right of the portrait represents the U.S. Department of the Treasury.",
+					"img": [
+						"notes/50/1990/ft-treasury-seal.jpg"
+					],
+					"label": "Green Seal"
+				},
+				{
+					"desc": "A unique combination of eleven numbers and letters appears twice on the front of the note.",
+					"img": [
+						"notes/50/1990/ft-serial-numbers.jpg"
+					],
+					"label": "Serial numbers"
+				}
+			],
+			"front": "notes/50/1990/front.jpg",
+			"keyFeatures": [
+				{
+					"desc": "Hold the note to light to see an embedded thread running vertically to the right of the portrait. The thread is imprinted with the letters <strong>USA 50</strong> in an alternating pattern and is visible from both sides of the note. The thread glows <strong>yellow</strong> when illuminated by ultraviolet light.",
+					"img": [
+						"notes/50/1990/ft-thread.png"
+					],
+					"label": "Security thread"
+				},
+				{
+					"desc": "Look carefully (magnification may be necessary) to see the small printed words <strong>THE UNITED STATES OF AMERICA</strong> along the outer edge of the portrait’s oval frame.",
+					"img": [
+						"notes/50/1990/ft-microprinting.png"
+					],
+					"label": "Microprinting"
+				}
+			],
+			"possibleDefects": [
+				{
+					"desc": "The thread is not embedded, doesn't have the right format or doesn't glow yellow when illuminated by ultraviolet light.",
+					"img": [
+						"notes/50/1990/ft-thread.png"
+					],
+					"key": "ft-thread",
+					"label": "Security thread"
+				},
+				{
+					"desc": "The small words <strong>THE UNITED STATES OF AMERICA</strong> are not along the outer edge of the portrait’s oval frame, or are badly printed.",
+					"img": [
+						"notes/50/1990/ft-microprinting.png"
+					],
+					"key": "ft-microprinting",
+					"label": "Microprinting"
+				},
+				{
+					"desc": "The seal of the Federal Reserve Bank is wrong or is not in the right place.",
+					"img": [
+						"notes/50/1990/ft-black-seal.jpg"
+					],
+					"key": "ft-black-seal",
+					"label": "Black seal"
+				},
+				{
+					"desc": "The note doesn't have raised printing on the surface.",
+					"img": [
+						"notes/50/1990/ft-raised-printing.jpg"
+					],
+					"key": "ft-raised-printing",
+					"label": "Raised printing"
+				},
+				{
+					"desc": "The papel is wrong or doesn't contain small red and blue fibers.",
+					"img": [
+						"notes/50/1990/ft-paper.jpg"
+					],
+					"key": "ft-paper",
+					"label": "Paper"
+				},
+				{
+					"desc": "The portrait or the vignette are wrong.",
+					"img": [
+						"notes/50/1990/ft-portrait.jpg",
+						"notes/50/1990/ft-vignette.jpg"
+					],
+					"key": "ft-portrait",
+					"label": "Portrait and vignette"
+				},
+				{
+					"desc": "The seal of the U.S. Department of the Treasury is wrong or isn't in the right place.",
+					"img": [
+						"notes/50/1990/ft-treasury-seal.jpg"
+					],
+					"key": "ft-treasury-seal",
+					"label": "Green seal"
+				},
+				{
+					"desc": "The serial numbers are badly printed or don't have the right format.",
+					"img": [
+						"notes/50/1990/ft-serial-numbers.jpg"
+					],
+					"key": "ft-serial-numbers",
+					"label": "Serial numbers"
+				}
+			]
+		},
+		"1997": {
+			"back": "notes/50/1997/back.jpg",
+			"features": [
+				{
+					"desc": "A black seal to the left of the portrait represents the entire Federal Reserve System. A letter and number beneath the left serial number identifies the distributing Federal Reserve Bank.",
+					"img": [
+						"notes/50/1997/ft-black-seal.jpg"
+					],
+					"label": "Black seal"
+				},
+				{
+					"desc": "Look carefully (magnification may be necessary) to see the small printed words <strong>FIFTY</strong> repeated in the alternating spaces in the vertical side borders of the note and <strong>THE UNITED STATES OF AMERICA</strong> in the left side of President Grant’s collar.",
+					"img": [
+						"notes/50/1997/ft-microprinting-1.jpg",
+						"notes/50/1997/ft-microprinting-2.jpg"
+					],
+					"label": "Microprinting"
+				},
+				{
+					"desc": "Move your finger along the note’s surface to feel the raised printing, which gives genuine Federal Reserve notes their distinctive texture.",
+					"img": [
+						"notes/50/1997/ft-raised-printing.jpg"
+					],
+					"label": "Raised printing"
+				},
+				{
+					"desc": "Federal Reserve note paper is one-fourth linen and three-fourths cotton, and contains red and blue security fibers.",
+					"img": [
+						"notes/50/1997/ft-paper.jpg"
+					],
+					"label": "Paper"
+				},
+				{
+					"desc": "The $50 note features a portrait of President Grant on the front of the note. The vignette on the back of the note features the United States Capitol.",
+					"img": [
+						"notes/50/1997/ft-portrait.jpg"
+					],
+					"label": "Portrait and vignette"
+				},
+				{
+					"desc": "A seal to the right of the portrait represents the U.S. Department of the Treasury.",
+					"img": [
+						"notes/50/1997/ft-treasury-seal.jpg"
+					],
+					"label": "Green Seal"
+				},
+				{
+					"desc": "A unique combination of eleven numbers and letters appears twice on the front of the note.",
+					"img": [
+						"notes/50/1997/ft-serial-numbers.jpg"
+					],
+					"label": "Serial numbers"
+				}
+			],
+			"front": "notes/50/1997/front.jpg",
+			"keyFeatures": [
+				{
+					"desc": "Hold the note to light to see an embedded thread running vertically to the right of the portrait. The thread is imprinted with the text <strong>USA 50</strong> and a small flag in an alternating pattern and is visible from both sides of the note. The thread glows <strong>yellow</strong> when illuminated by ultraviolet light.",
+					"img": [
+						"notes/50/1997/ft-thread.png"
+					],
+					"label": "Security thread"
+				},
+				{
+					"desc": "Hold the note to light and look for a faint image of President Grant in the blank space to the right of the portrait. The image is visible from both sides of the note.",
+					"img": [
+						"notes/50/1997/ft-watermark.png"
+					],
+					"label": "Watermark"
+				},
+				{
+					"desc": "Tilt the note to see the numeral 50 in the lower right corner on the front of the note shift from green to black.",
+					"img": [
+						"notes/50/1997/ft-color-shifting-ink.png"
+					],
+					"label": "Color-shifting ink"
+				}
+			],
+			"possibleDefects": [
+				{
+					"desc": "The thread is not embedded, doesn't have the right format or doesn't glow yellow when illuminated by ultraviolet light.",
+					"img": [
+						"notes/50/1997/ft-thread.png"
+					],
+					"key": "ft-thread",
+					"label": "Security thread"
+				},
+				{
+					"desc": "The watermark is not in the right place, isn't visible from both sides or doesn't match the portrait.",
+					"img": [
+						"notes/50/1997/ft-watermark.png"
+					],
+					"key": "ft-watermark",
+					"label": "Watermark"
+				},
+				{
+					"desc": "The ink doesn't shift from green to black.",
+					"img": [
+						"notes/50/1997/ft-color-shifting-ink.png"
+					],
+					"key": "ft-color-shifting-ink",
+					"label": "Color-shifting ink"
+				},
+				{
+					"desc": "The seal of the Federal Reserve System is wrong or is not in the right place.",
+					"img": [
+						"notes/50/1990/ft-black-seal.jpg"
+					],
+					"key": "ft-black-seal",
+					"label": "Black seal"
+				},
+				{
+					"desc": "The small text <strong>FIFTY</strong> or <strong>THE UNITED STATES OF AMERICA</strong> are not in the right place or are badly printed.",
+					"img": [
+						"notes/50/1997/ft-microprinting-1.jpg",
+						"notes/50/1997/ft-microprinting-2.jpg"
+					],
+					"key": "ft-microprinting",
+					"label": "Microprinting"
+				},
+				{
+					"desc": "The note doesn't have raised printing on the surface.",
+					"img": [
+						"notes/50/1997/ft-raised-printing.jpg"
+					],
+					"key": "ft-raised-printing",
+					"label": "Raised printing"
+				},
+				{
+					"desc": "The papel is wrong or doesn't contain small red and blue fibers.",
+					"img": [
+						"notes/50/1997/ft-paper.jpg"
+					],
+					"key": "ft-paper",
+					"label": "Paper"
+				},
+				{
+					"desc": "The portrait or the vignette are wrong.",
+					"img": [
+						"notes/50/1997/ft-portrait.jpg"
+					],
+					"key": "ft-portrait",
+					"label": "Portrait and vignette"
+				},
+				{
+					"desc": "The seal of the U.S. Department of the Treasury is wrong or isn't in the right place.",
+					"img": [
+						"notes/50/1997/ft-treasury-seal.jpg"
+					],
+					"key": "ft-treasury-seal",
+					"label": "Green seal"
+				},
+				{
+					"desc": "The serial numbers are badly printed or don't have the right format.",
+					"img": [
+						"notes/50/1997/ft-serial-numbers.jpg"
+					],
+					"key": "ft-serial-numbers",
+					"label": "Serial numbers"
+				}
+			]
+		},
+		"2004": {
+			"back": "notes/50/2004/back.png",
+			"features": [
+				{
+					"desc": "A black seal to the left of the portrait represents the entire Federal Reserve System. A letter and number beneath the left serial number identifies the distributing Federal Reserve Bank.",
+					"img": [
+						"notes/50/2004/ft-black-seal.png"
+					],
+					"label": "Black seal"
+				},
+				{
+					"desc": "Look carefully (magnification may be necessary) to see the small printed text <strong>FIFTY</strong>, <strong>USA</strong>, and <strong>50</strong> inside two of the blue stars to the left of the portrait, <strong>FIFTY</strong> repeated within both side borders of the note, and <strong>THE UNITED STATES OF AMERICA</strong> in President Grant’s collar.",
+					"img": [
+						"notes/50/2004/ft-microprinting-1.png",
+						"notes/50/2004/ft-microprinting-2.png"
+					],
+					"label": "Microprinting"
+				},
+				{
+					"desc": "Move your finger along the note’s surface to feel the raised printing, which gives genuine Federal Reserve notes their distinctive texture.",
+					"img": [
+						"notes/50/2004/ft-raised-printing.png"
+					],
+					"label": "Raised printing"
+				},
+				{
+					"desc": "Federal Reserve note paper is one-fourth linen and three-fourths cotton, and contains red and blue security fibers.",
+					"img": [
+						"notes/50/2004/ft-paper.png"
+					],
+					"label": "Paper"
+				},
+				{
+					"desc": "The note includes subtle background colors of blue and red to both sides of the note.",
+					"img": [
+						"notes/50/2004/ft-color.png"
+					],
+					"label": "Color"
+				},
+				{
+					"desc": "The $50 note features a portrait of President Grant on the front of the note. The vignette on the back of the note features the United States Capitol.",
+					"img": [
+						"notes/50/2004/ft-portrait.png"
+					],
+					"label": "Portrait and vignette"
+				},
+				{
+					"desc": "Representative of the United States flag, a field of blue stars is located to the left of the portrait, while three red stripes are located to the right of the portrait. A small metallic silver-blue star is located on the lower right side of the portrait.",
+					"img": [
+						"notes/50/2004/ft-symbols-of-freedom.png"
+					],
+					"label": "Symbols of freedom"
+				},
+				{
+					"desc": "A seal to the right of the portrait represents the U.S. Department of the Treasury.",
+					"img": [
+						"notes/50/2004/ft-treasury-seal.png"
+					],
+					"label": "Green Seal"
+				},
+				{
+					"desc": "A unique combination of eleven numbers and letters appears twice on the front of the note.",
+					"img": [
+						"notes/50/2004/ft-serial-numbers.png"
+					],
+					"label": "Serial numbers"
+				}
+			],
+			"front": "notes/50/2004/front.png",
+			"keyFeatures": [
+				{
+					"desc": "Hold the note to light to see an embedded thread running vertically to the right of the portrait. The thread is imprinted with the text <strong>USA 50</strong> and a small flag in an alternating pattern and is visible from both sides of the note. The thread glows <strong>yellow</strong> when illuminated by ultraviolet light.",
+					"img": [
+						"notes/50/2004/ft-thread.png"
+					],
+					"label": "Security thread"
+				},
+				{
+					"desc": "Hold the note to light and look for a faint image of President Grant in the blank space to the right of the portrait. The image is visible from both sides of the note.",
+					"img": [
+						"notes/50/2004/ft-watermark.png"
+					],
+					"label": "Watermark"
+				},
+				{
+					"desc": "Tilt the note to see the numeral 50 in the lower right corner on the front of the note shift from copper to green.",
+					"img": [
+						"notes/50/2004/ft-color-shifting-ink.png"
+					],
+					"label": "Color-shifting ink"
+				}
+			],
+			"possibleDefects": [
+				{
+					"desc": "The thread is not embedded, doesn't have the right format or doesn't glow yellow when illuminated by ultraviolet light.",
+					"img": [
+						"notes/50/2004/ft-thread.png"
+					],
+					"key": "ft-thread",
+					"label": "Security thread"
+				},
+				{
+					"desc": "The watermark is not in the right place, isn't visible from both sides or doesn't match the portrait.",
+					"img": [
+						"notes/50/2004/ft-watermark.png"
+					],
+					"key": "ft-watermark",
+					"label": "Watermark"
+				},
+				{
+					"desc": "The ink doesn't shift from copper to green.",
+					"img": [
+						"notes/50/2004/ft-color-shifting-ink.png"
+					],
+					"key": "ft-color-shifting-ink",
+					"label": "Color-shifting ink"
+				},
+				{
+					"desc": "The seal of the Federal Reserve System is wrong or is not in the right place.",
+					"img": [
+						"notes/50/2004/ft-black-seal.png"
+					],
+					"key": "ft-black-seal",
+					"label": "Black seal"
+				},
+				{
+					"desc": "Some of the small words are not in the right place or are badly printed.",
+					"img": [
+						"notes/50/2004/ft-microprinting-1.png",
+						"notes/50/2004/ft-microprinting-2.png"
+					],
+					"key": "ft-microprinting",
+					"label": "Microprinting"
+				},
+				{
+					"desc": "The banknote doesn't have raised printing on the surface.",
+					"img": [
+						"notes/50/2004/ft-raised-printing.png"
+					],
+					"key": "ft-raised-printing",
+					"label": "Raised printing"
+				},
+				{
+					"desc": "The papel is wrong or doesn't contain small red and blue fibers.",
+					"img": [
+						"notes/50/2004/ft-paper.png"
+					],
+					"key": "ft-paper",
+					"label": "Paper"
+				},
+				{
+					"desc": "The colors in the background are wrong.",
+					"img": [
+						"notes/50/2004/ft-color.png"
+					],
+					"key": "ft-color",
+					"label": "Color"
+				},
+				{
+					"desc": "The portrait or the vignette are wrong.",
+					"img": [
+						"notes/50/2004/ft-portrait.png"
+					],
+					"key": "ft-portrait",
+					"label": "Portrait and vignette"
+				},
+				{
+					"desc": "Some of the symbols in the background are missing or are badly printed.",
+					"img": [
+						"notes/50/2004/ft-symbols-of-freedom.png"
+					],
+					"key": "ft-symbols-of-freedom",
+					"label": "Symbols of freedom"
+				},
+				{
+					"desc": "The seal of the U.S. Department of the Treasury is wrong or isn't in the right place.",
+					"img": [
+						"notes/50/2004/ft-treasury-seal.png"
+					],
+					"key": "ft-treasury-seal",
+					"label": "Green seal"
+				},
+				{
+					"desc": "The serial numbers are badly printed or don't have the right format.",
+					"img": [
+						"notes/50/2004/ft-serial-numbers.png"
+					],
+					"key": "ft-serial-numbers",
+					"label": "Serial numbers"
+				}
+			]
+		}
+	}
+}

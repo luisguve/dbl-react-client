@@ -1,0 +1,6 @@
+﻿{
+	"business": {
+		"heading": "Are you a business? Give us some information to verify",
+		"body": "<p>Business accounts have more credibility in terms of banknote reviews than regular user accounts, so businesses need to prove us that they really are.</p><p>In this page, we assume that we ask the user for some data in a form, as well as his mail. An administrator will verify the data, generate a business registration link and mail it to the user.</p>"
+	}
+}

@@ -1,0 +1,104 @@
+{
+	"usd-2": {
+		"1976": {
+			"back": "notes/2/1976/back.jpg",
+			"features": [
+				{
+					"desc": "A black seal to the left of the portrait which bears the name and corresponding letter of the distributing Federal Reserve Bank.",
+					"img": [
+						"notes/2/1976/ft-black-seal.jpg"
+					],
+					"label": "Black seal"
+				},
+				{
+					"desc": "Move your finger along the note’s surface to feel the raised printing, which gives genuine Federal Reserve notes their distinctive texture.",
+					"img": [
+						"notes/2/1976/ft-raised-printing.jpg"
+					],
+					"label": "Raised printing"
+				},
+				{
+					"desc": "Federal Reserve note paper is one-fourth linen and three-fourths cotton, and contains red and blue security fibers.",
+					"img": [
+						"notes/2/1976/ft-paper.jpg"
+					],
+					"label": "Paper"
+				},
+				{
+					"desc": "The $2 note features a portrait of Thomas Jefferson on the front of the note. The vignette on the back of the note features the Declaration of Independence.",
+					"img": [
+						"notes/2/1976/ft-portrait.jpg",
+						"notes/2/1976/ft-vignette.jpg"
+					],
+					"label": "Portrait and vignette"
+				},
+				{
+					"desc": "A seal to the right of the portrait represents the U.S. Department of the Treasury.",
+					"img": [
+						"notes/2/1976/ft-treasury-seal.jpg"
+					],
+					"label": "Green Seal"
+				},
+				{
+					"desc": "A combination of eleven numbers and letters appears twice on the front of the note.",
+					"img": [
+						"notes/2/1976/ft-serial-numbers.jpg"
+					],
+					"label": "Serial numbers"
+				}
+			],
+			"front": "notes/2/1976/front.jpg",
+			"possibleDefects": [
+				{
+					"desc": "The seal of the Federal Reserve Bank is wrong or is not in the right place.",
+					"img": [
+						"notes/2/1976/ft-black-seal.jpg"
+					],
+					"key": "ft-black-seal",
+					"label": "Black seal"
+				},
+				{
+					"desc": "The note doesn't have raised printing on the surface.",
+					"img": [
+						"notes/2/1976/ft-raised-printing.jpg"
+					],
+					"key": "ft-raised-printing",
+					"label": "Raised printing"
+				},
+				{
+					"desc": "The papel is wrong or doesn't contain small red and blue fibers.",
+					"img": [
+						"notes/2/1976/ft-paper.jpg"
+					],
+					"key": "ft-paper",
+					"label": "Paper"
+				},
+				{
+					"desc": "The portrait or the vignette are wrong.",
+					"img": [
+						"notes/2/1976/ft-portrait.jpg",
+						"notes/2/1976/ft-vignette.jpg"
+					],
+					"key": "ft-portrait",
+					"label": "Portrait and vignette"
+				},
+				{
+					"desc": "The seal of the U.S. Department of the Treasury is wrong or isn't in the right place.",
+					"img": [
+						"notes/2/1976/ft-treasury-seal.jpg"
+					],
+					"key": "ft-treasury-seal",
+					"label": "Green seal"
+				},
+				{
+					"desc": "The serial numbers are badly printed or don't have the right format.",
+					"img": [
+						"notes/2/1976/ft-serial-numbers.jpg"
+					],
+					"key": "ft-serial-numbers",
+					"label": "Serial numbers"
+				}
+			]
+		}
+	}
+}

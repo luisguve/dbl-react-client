@@ -1,0 +1,16 @@
+{
+	"review": {
+		"noReviews": "Este billete aún no tiene revisiones",
+		"totalReviews": "{n, plural, =1 {# revisión} other {# revisiones}}",
+		"userGoodReviews": "{n, plural, =1 {# usuario indicó} other {# usuarios indicaron}} que este billete es auténtico",
+		"userBadReviews": "{n, plural, =1 {# usuario indicó} other {# usuarios indicaron}} defectos en este billete",
+		"businessGoodReviews": "{n, plural, =1 {# negocio indicó} other {# negocios indicaron}} que este billete es auténtico",
+		"businessBadReviews": "{n, plural, =1 {# negocio indicó} other {# negocios indicaron}} defectos en este billete",
+		"rating": "Rating",
+		"moreInfo": "Ingresa para ver más información sobre quiénes revisaron este billete",
+		"comments": "{n, plural, =1 {# comentario} other {# comentarios}}",
+		"myGoodReview": "Indicaste que este billete no tiene defectos el {date} con un rating de {rating}",
+		"myBadReview": "Indicaste algunos defectos en este billete el {date}",
+		"defectsHeading": "Los usuarios encontraron los siguientes defectos en este billete"
+	}
+}

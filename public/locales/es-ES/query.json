@@ -1,0 +1,10 @@
+{
+	"query": {
+		"label": "consultar billete",
+		"tip": "<strong>Tip</strong>: deja el número de serial vacío si solo quieres consultar las características de seguridad",
+		"serialNumber": "número de serial",
+		"value": "denominación",
+		"series": "series",
+		"submit": "consultar"
+	}
+}

@@ -1,0 +1,1 @@
+export default const srvAddr = "http://localhost:8000";

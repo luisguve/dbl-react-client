@@ -1,0 +1,10 @@
+﻿{
+	"query": {
+		"label": "query banknote",
+		"tip": "<strong>Tip</strong>: leave the serial number empty if you just want to see the security features",
+		"serialNumber": "serial number",
+		"value": "value",
+		"series": "series",
+		"submit": "search"
+	}
+}

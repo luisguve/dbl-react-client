@@ -1,0 +1,22 @@
+﻿{
+	"reviewForm": {
+		"label": "Send a review",
+		"isGenuine": "is authentic",
+		"isCounterfeit": "is counterfeit",
+		"billState": "note conditions",
+		"defectsHeading": "Indicate the defects on this banknote",
+		"comment": "Public comment",
+		"details": {
+			"heading": "Include private details",
+			"incoming": "Incoming",
+			"outgoing": "Outgoing",
+			"from": "From",
+			"to": "To",
+			"subject": "Subject",
+			"notes": "Notes"
+		},
+		"submit": "Send",
+		"askForLogin": "Login to send a review of this note",
+		"alreadyReviewed": "You are allowed to submit only one review per banknote"
+	}
+}

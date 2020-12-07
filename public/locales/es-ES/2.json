@@ -1,0 +1,104 @@
+{
+	"usd-2": {
+		"1976": {
+			"front": "notes/2/1976/front.jpg",
+			"back": "notes/2/1976/back.jpg",
+			"features": [
+				{
+					"label": "Sello negro",
+					"desc": "Hay un sello del Banco de la Reserva Federal en color negro, a la izquierda del retrato, con el nombre del Banco distribuidor de la Reserva Federal.",
+					"img": [
+						"notes/2/1976/ft-black-seal.jpg"
+					]
+				},
+				{
+					"label": "Impresión de relieve",
+					"desc": "El traje del retrato está impreso con textura de relieve.",
+					"img": [
+						"notes/2/1976/ft-raised-printing.jpg"
+					]
+				},
+				{
+					"label": "Papel",
+					"desc": "El material del papel está compuesto por un cuarto de lino y tres cuartos de algodón, y tiene pequeñas fibras azules y rojas dispersas en el billete.",
+					"img": [
+						"notes/2/1976/ft-paper.jpg"
+					]
+				},
+				{
+					"label": "Retrato y viñeta",
+					"desc": "Hay un retrato de Thomas Jefferson en la cara del billete, y una viñeta de la Firma de la Declaración de la Independencia de los Estados Unidos en el reverso.",
+					"img": [
+						"notes/2/1976/ft-portrait.jpg",
+						"notes/2/1976/ft-vignette.jpg"
+					]
+				},
+				{
+					"label": "Sello verde",
+					"desc": "Hay un sello del Departamento del Tesoro de los Estados Unidos en verde, a la derecha del retrato.",
+					"img": [
+						"notes/2/1976/ft-treasury-seal.jpg"
+					]
+				},
+				{
+					"label": "Número de serial",
+					"desc": "El número de serial está compuesto por una combinación de letras y números, y aparece dos veces en la cara del billete.",
+					"img": [
+						"notes/2/1976/ft-serial-numbers.jpg"
+					]
+				}
+			],
+			"possibleDefects": [
+				{
+					"label": "Sello negro",
+					"desc": "El sello del Banco de la Reserva Federal no corresponde o no está en el lugar indicado",
+					"img": [
+						"notes/2/1976/ft-black-seal.jpg"
+					],
+					"key": "ft-black-seal"
+				},
+				{
+					"label": "Impresión de relieve",
+					"desc": "El billete no tiene textura de relieve en el traje del retrato.",
+					"img": [
+						"notes/2/1976/ft-raised-printing.jpg"
+					],
+					"key": "ft-raised-printing"
+				},
+				{
+					"label": "Papel",
+					"desc": "El papel no corresponde o no tiene pequeñas fibras azules y rojas dispersas en el billete.",
+					"img": [
+						"notes/2/1976/ft-paper.jpg"
+					],
+					"key": "ft-paper"
+				},
+				{
+					"label": "Retrato y viñeta",
+					"desc": "El retrato en la cara del billete o la viñeta en el reverso no corresponden.",
+					"img": [
+						"notes/2/1976/ft-portrait.jpg",
+						"notes/2/1976/ft-vignette.jpg"
+					],
+					"key": "ft-portrait"
+				},
+				{
+					"label": "Sello verde",
+					"desc": "El sello del Departamento del Tesoro de los Estados Unidos no corresponde o no está en el lugar indicado.",
+					"img": [
+						"notes/2/1976/ft-treasury-seal.jpg"
+					],
+					"key": "ft-treasury-seal"
+				},
+				{
+					"label": "Número de serial",
+					"desc": "El número de serial está mal impreso o no tiene el formato adecuado.",
+					"img": [
+						"notes/2/1976/ft-serial-numbers.jpg"
+					],
+					"key": "ft-serial-numbers"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"nav": {
+		"login": "ingresa",
+		"signup": "regístrate",
+		"username": "Usuario",
+		"password": "Contraseña",
+		"submit": "Enviar",
+		"logout": "Salir",
+		"business": "¿Eres un comercio? Regístrate aquí",
+		"about": "Acerca",
+		"home": "Inicio"
+	}
+}
