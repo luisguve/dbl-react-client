@@ -1,0 +1,134 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.no-reviews, .review {
+	width: 40%;
+	border: 1px solid grey;
+	border-radius: 12px;
+	background-color: aliceblue;
+	padding: 10px;
+	margin-top: 15px;
+}
+.reviews-summary {
+	display: inline-block;
+}
+.text-left {
+	text-align: left;
+}
+.features {
+	width: 80%;
+}
+.features ul {
+	list-style-type: none;
+}
+.features li h3, .features li h2 {
+	padding-top: 10px;
+	margin: 0px;
+}
+.features .feature-content {
+	padding-bottom: 10px;
+	margin: 0px;
+}
+.features li.odd {
+	background-color: aliceblue;
+	border-radius: 20px;
+	margin: 10px 0px;
+}
+.features li.defect.odd {
+	background-color: #ffcbcb;
+}
+.features li.even {
+	border: 1px solid #09f;
+	border-radius: 20px;
+}
+.features li.defect.even {
+	border: 1px solid red;
+}
+.features li .feature-content {
+	display: flex;
+}
+.features li.odd .feature-content {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.feature-content .samples {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 30%;
+	padding: 0px 20px;
+}
+.feature-content p {
+	text-align: left;
+	font-size: 22px;
+	padding: 0px 40px 10px 40px;
+	width: 70%;
+}
+.feature-content .samples img {
+	margin: 5px 0px;
+}
+img {
+	max-width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1025px) {
+	.no-reviews, .review {
+		width: 50%;
+	}
+}
+@media (max-width: 769px) {
+	.no-reviews, .review {
+		width: 70%;
+	}
+}
+@media (max-width: 426px) {
+	.no-reviews, .review {
+		width: 90%;
+	}
+	.reviews-summary {
+		padding: 0 10px;
+	}
+	.features {
+		width: 100%;
+	}
+	.features h1 {
+		font-size: 1.7em;
+		text-align: left;
+	}
+	.features ul {
+		padding: 0;
+	}
+	.features .feature-content, .features li.odd .feature-content {
+		flex-direction: column;
+		align-items: center;
+	}
+	.feature-content p {
+		width: 80%;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	.feature-content .samples {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+	}
+	.feature-content .samples img {
+		max-width: 97%;
+	}
+	ul ul {
+		padding-left: 10px;
+	}
+}
+@media (max-width: 321px) {
+	h1 {
+		font-size: 1.7em;
+	}
+	.features h1 {
+		font-size: 1.4em;
+	}
+}

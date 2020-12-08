@@ -1,0 +1,43 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.comments-btn {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+}
+.comments-btn button {
+	padding: 12px;
+	margin: 15px 0;
+	border-radius: 12px;
+	font-size: 22px;
+}
+.comments {
+	display: block;
+	border-radius: 12px;
+	background-color: aliceblue;
+	padding: 10px;
+	width: 70%;
+	text-align: left;
+}
+.comments.hide {
+	display: none;
+}
+.comments p {
+	font-size: 20px;
+}
+@media (max-width: 426px) {
+	.comments-btn {
+		width: 65%;
+	}
+	.comments {
+		width: 100%;
+	}
+}
+@media (max-width: 321px) {
+	.comments-btn {
+		width: 75%;
+	}
+}

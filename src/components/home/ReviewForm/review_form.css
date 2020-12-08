@@ -1,0 +1,112 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.row {
+	display: flex;
+	flex-direction: column;
+}
+.row-80 {
+	width: 80%;
+}
+.row-70 {
+	width: 70%;
+}
+.oneline {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.defects {
+	display: flex;
+	flex-direction: column;
+	padding-left: 40px;
+	margin: 16px 0px;
+}
+.defect h3 {
+	padding-top: 10px;
+	margin: 0px;
+}
+.defect label {
+	display: flex;
+	align-items: center;
+	padding-bottom: 10px;
+	margin: 0px;
+}
+.defect label input {
+	width: 12%;
+}
+.defect .desc {
+	width: 88%;
+	display: flex;
+	justify-content: space-around;
+}
+.defect.odd {
+	background-color: aliceblue;
+	border-radius: 20px;
+	margin: 10px 0px;
+}
+.defect.even {
+	border: 1px solid #09f;
+	border-radius: 20px;
+}
+.defect.odd .desc {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.defect .desc .samples {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 30%;
+}
+.defect .desc .samples img {
+	margin: 5px 0px;
+}
+.defect .desc p {
+	width: 70%;
+	font-size: 22px;
+	text-align: left;
+	font-size: 22px;
+	padding: 0px 40px 10px 40px;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.column input, .column textarea {
+	align-self: stretch;
+}
+.details {
+	margin-top: 10px;
+	border: 1px solid #09f;
+	border-radius: 20px;
+	padding: 10px;
+	background-color: aliceblue;
+}
+button[type="submit"] {
+	margin-top: 10px;
+	border-radius: 20px;
+}
+label, button {
+	font-size: 22px;
+}
+.error {
+	align-self: center;
+	border: 1px solid red;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+/* Responsive */
+@media (max-width: 426px) {
+	.row-80, .row-70 {
+		width: 100%;
+	}
+	ul ul {
+		padding-left: 10px;
+	}
+}
