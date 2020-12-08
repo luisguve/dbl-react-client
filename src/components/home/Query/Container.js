@@ -22,17 +22,36 @@ const listFeatures = (value, series, secFeatures) => {
 		secFeatures
 	};
 };
+
+function setDefaultReviews(reviews) {
+	if (!reviews) {
+		return {
+			goodReviews: [],
+			badReviews: [],
+		}
+	}
+	let result = {};
+	if (!reviews.goodReviews) {
+		result.goodReviews = [];
+	}
+	if (!reviews.badReviews) {
+		result.badReviews = [];
+	}
+	return result;
+}
 const listReview = (r) => {
 	const comments = setComments(r);
 	const markerLocations = setMarkerLocations(r);
+	const businessReviews = setDefaultReviews(r.businessReviews);
+	const userReviews = setDefaultReviews(r.userReviews);
 
 	const data = {
 		billInfo: r.billInfo,
 		totalReviews: r.goodReviews + r.badReviews,
 		goodReviews: r.goodReviews,
 		badReviews: r.badReviews,
-		userReviews: r.userReviews,
-		businessReviews: r.businessReviews,
+		userReviews,
+		businessReviews,
 		avgRating: r.avgRating,
 		comments,
 		markerLocations
@@ -80,7 +99,7 @@ function setComments(r) {
 	const BR = r.businessReviews;
 	const UR = r.userReviews
 	if (!BR || !UR) {
-		return null;
+		return [];
 	}
 	const comments = [];
 	const appendComment = (content, typeOfAccount) => {

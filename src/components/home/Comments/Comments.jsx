@@ -27,7 +27,7 @@ const Presentation = (props) => {
 		);
 	});
 	return (
-		<div className="container">
+		<div className="comments-container">
 			<div className="comments-btn">
 				<button onClick={toggleComments}>{ buttonLabel }</button>
 			</div>

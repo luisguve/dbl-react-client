@@ -13,7 +13,7 @@ const Presentation = (props) => {
 		alt: `back of ${props.value} series ${props.series} note`
 	};
 	return (
-		<div className="container">
+		<div className="samples-container">
 			<div className="samples">
 				<div className="sample-note">
 					<img src={front.src} alt={front.alt} />

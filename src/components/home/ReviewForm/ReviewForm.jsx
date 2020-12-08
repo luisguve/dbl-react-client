@@ -123,7 +123,7 @@ const Presentation = (props) => {
 			const src = `images/${img}`
 			return <img alt="" src={src} key={idx}/>
 		})
-		const className = "defect " + idx % 2 === 0 ? "even": "odd";
+		const className = "defect " + (idx % 2 === 0 ? "even": "odd");
 		return (
 			<div className={className} key={idx}>
 				<h3>{defect.label}</h3>
@@ -141,7 +141,7 @@ const Presentation = (props) => {
 	const reviewInput = typeOfReview === goodReview ? (
 		<div className="container">
 			<div className="row row-70">
-				<label>
+				<label className="rating">
 					{t("reviewForm.billState")}
 					<select value={rating} onChange={handleChangeRating}>
 					{ ratingOptions }
@@ -154,10 +154,10 @@ const Presentation = (props) => {
 			<h2>{t("reviewForm.defectsHeading")}</h2>
 			{ defectOptions }
 		</div>
-	)
+	);
 
 	return (
-		<div className="container">
+		<div className="review-form container">
 			<div className="row row-80">
 				<h1>{t("reviewForm.label")}</h1>
 				<form onSubmit={handleSubmit}>

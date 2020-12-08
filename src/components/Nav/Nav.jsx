@@ -20,7 +20,10 @@ const Presentation = (props) => {
 			credentials: "include"
 		})
 		.then(res => res.json())
-		.then(user => { 
+		.then(user => {
+			if (!user.isLoggedIn) {
+				return;
+			}
 			if (user.sendLocation) {
 				sendLocation();
 			}

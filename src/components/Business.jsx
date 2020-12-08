@@ -8,7 +8,7 @@ const Business = () => {
 		__html: t("business.body")
 	};
 	return (
-		<div className="container">
+		<div className="business-container">
 			<div className="row">
 				<h1>{t("business.heading")}</h1>
 				<div dangerouslySetInnerHTML={content} />

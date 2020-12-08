@@ -14,7 +14,7 @@ const About = () => {
 		__html: content
 	};
 	return (
-		<div className="container">
+		<div className="about-container">
 			<div className="row">
 				<h1>DollarBlacklist</h1>
 				<div dangerouslySetInnerHTML={about} />

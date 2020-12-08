@@ -80,7 +80,7 @@ const Presentation = (props) => {
 	}
 
 	return (
-		<div className="container uppercase">
+		<div className="query-container uppercase">
 			<h1>{t("query.label")}</h1>
 			<h2 className="tip" dangerouslySetInnerHTML={{ __html: t("query.tip") }} />
 			<form onSubmit={e => {e.preventDefault(); handleSubmit();}}>

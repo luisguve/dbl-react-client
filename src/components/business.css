@@ -1,12 +1,12 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.business-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.row {
-  width: 70%;
+.business-container .row {
+	width: 70%;
 }
-p {
-  text-align: left;
-  font-size: 22px;
+.business-container p {
+	text-align: left;
+	font-size: 22px;
 }

@@ -1,4 +1,4 @@
-.container {
+.features-container, .defects-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -56,7 +56,7 @@
 .feature-content .samples img {
 	margin: 5px 0px;
 }
-img {
+.features-container img {
 	max-width: 100%;
 }
 
@@ -65,14 +65,14 @@ img {
 	.features {
 		width: 100%;
 	}
-	.features h1 {
-		font-size: 1.7em;
-		text-align: left;
+	h1 {
+		font-size: 2em;
+		text-align: center;
 	}
 	.features ul {
 		padding: 0;
 	}
-	.feature-content, li.odd .feature-content {
+	.features .feature-content, .features li.odd .feature-content {
 		flex-direction: column;
 		align-items: center;
 	}

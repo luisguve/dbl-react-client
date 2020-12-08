@@ -31,7 +31,7 @@ const Presentation = (props) => {
 	});
 
 	return (
-		<div className="container">
+		<div className="defects-container">
 			<div className="features">
 				<h1>{t("review.defectsHeading")}</h1>
 				<ul>{defects}</ul>

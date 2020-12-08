@@ -44,7 +44,7 @@ const Presentation = (props) => {
 		</div>
 	);
 	return (
-		<div className="container">
+		<div className="features-container">
 			<h1>{t("learn.heading")}</h1>
 			{keyFeatures}
 			{features}

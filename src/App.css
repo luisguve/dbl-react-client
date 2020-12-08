@@ -80,3 +80,17 @@ button:not(:disabled):active {
 button:focus {
   border-color: #666;
 }
+
+h1 {
+  color: #777;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}

@@ -1,17 +1,20 @@
-.container {
+.samples-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.samples {
+.samples-container .samples {
 	width: 80%;
 	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.sample-note img {
+.samples-container .sample-note img {
 	max-width: 100%;
 }
 @media (max-width: 426px) {
-	.samples {
+	.samples-container .samples {
 		width: 100%;
 		margin-top: 15px;
 	}

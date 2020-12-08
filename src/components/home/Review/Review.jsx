@@ -1,5 +1,6 @@
 import Map from './Map';
 import { useTranslation } from 'react-i18next';
+import "./review.css";
 
 function setMyGoodReview(userId, reviews) {
 	for (let i = reviews.goodReviews.length - 1; i >= 0; i--) {
@@ -36,13 +37,15 @@ const Presentation = (props) => {
 
 	if (!props.isLoggedIn) {
 		return (
-			<div className="review">
-				<h3>{props.billInfo.serialNumber} - ${props.billInfo.value} - series {props.billInfo.series}</h3>
-				<h3>{t("review.totalReviews", { n : props.totalReviews } )}</h3>
-				<h4>{t("review.userGoodReviews", { n : props.goodReviews } )}</h4>
-				<h4>{t("review.userBadReviews", { n : props.badReviews } )}</h4>
-				<h4>{t("review.rating")}: {props.avgRating}/5</h4>
-				<h5>{t("review.moreInfo")}</h5>
+			<div className="review-container">
+				<div className="review">
+					<h3>{props.billInfo.serialNumber} - ${props.billInfo.value} - series {props.billInfo.series}</h3>
+					<h3>{t("review.totalReviews", { n : props.totalReviews } )}</h3>
+					<h4>{t("review.userGoodReviews", { n : props.goodReviews } )}</h4>
+					<h4>{t("review.userBadReviews", { n : props.badReviews } )}</h4>
+					<h4>{t("review.rating")}: {props.avgRating}/5</h4>
+					<h5>{t("review.moreInfo")}</h5>
+				</div>
 			</div>
 		);
 	}
@@ -53,19 +56,23 @@ const Presentation = (props) => {
 	switch (props.typeOfAccount) {
 		case "regular":
 		case "admin":
-			if (props.userReviews.goodReviews) {
-				myGoodReview = setMyGoodReview(props.userId, props.userReviews);
-			}
-			if (props.userReviews.badReviews) {
-				myBadReview = setMyBadReview(props.userId, props.userReviews);
+			if (props.userReviews) {
+				if (props.userReviews.goodReviews) {
+					myGoodReview = setMyGoodReview(props.userId, props.userReviews);
+				}
+				if (props.userReviews.badReviews) {
+					myBadReview = setMyBadReview(props.userId, props.userReviews);
+				}
 			}
 			break;
 		case "business":
-			if (props.businessReviews.goodReviews) {
-				myGoodReview = setMyGoodReview(props.userId, props.businessReviews);
-			}
-			if (props.businessReviews.badReviews) {
-				myBadReview = setMyBadReview(props.userId, props.businessReviews);
+			if (props.businessReviews) {
+				if (props.businessReviews.goodReviews) {
+					myGoodReview = setMyGoodReview(props.userId, props.businessReviews);
+				}
+				if (props.businessReviews.badReviews) {
+					myBadReview = setMyBadReview(props.userId, props.businessReviews);
+				}
 			}
 		break;
 		default:
@@ -78,7 +85,7 @@ const Presentation = (props) => {
 	const urGR = props.userReviews.goodReviews;
 
 	return (
-		<div>
+		<div className="review-container">
 			<div className="review">
 				<h3>{props.billInfo.serialNumber} - ${props.billInfo.value} - series {props.billInfo.series}</h3>
 				<h3>{t("review.totalReviews", { n : props.totalReviews } )}</h3>
