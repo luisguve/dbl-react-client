@@ -1,6 +1,19 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import MarkerPopup from "./MarkerPopup";
 import "./map.css";
+import "leaflet/dist/leaflet.css";
+import L from 'leaflet';
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+	iconRetinaUrl: iconRetina,
+	iconUrl: icon,
+	shadowUrl: iconShadow
+});
 
 // Coords of the United States
 const initialView = [37.6, -95.665];
@@ -12,24 +25,25 @@ const Map = (props) => {
 		return (
 			<Marker position={m.coords} key={idx}>
 				<Popup>
-					<MarkerPopup {...m.userReviews} {...m.businessReviews}/>
+					<MarkerPopup
+					userReviews={m.userReviews}
+					businessReviews={m.businessReviews}
+					/>
 				</Popup>
 			</Marker>
 		);
 	});
 	return (
-		<div className="map">
-			<MapContainer center={initialView} zoom={4} >
-				<TileLayer
-				attribution='Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
-				url={url}
-				id={"mapbox/streets-v11"}
-				tileSize={512}
-				zoomOffset={-1}
-				/>
-				{markers}
-			</MapContainer>
-		</div>
+		<MapContainer center={initialView} zoom={4} >
+			<TileLayer
+			attribution='Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+			url={url}
+			id={"mapbox/streets-v11"}
+			tileSize={512}
+			zoomOffset={-1}
+			/>
+			{markers}
+		</MapContainer>
 	);
 }
 
