@@ -16,6 +16,7 @@
 			"notes": "Notes"
 		},
 		"submit": "Send",
+		"indicateDefects": "You must indicate at least one defect",
 		"askForLogin": "Login to send a review of this note",
 		"alreadyReviewed": "You are allowed to submit only one review per banknote"
 	}

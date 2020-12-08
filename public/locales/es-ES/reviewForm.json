@@ -16,6 +16,7 @@
 			"notes": "Notas"
 		},
 		"submit": "Enviar",
+		"indicateDefects": "Debes indicar al menos un defecto",
 		"askForLogin": "Inicia sesión para enviar una revisión de este billete",
 		"alreadyReviewed": "Solo se permite una revisión de un mismo tipo (buena o mala) por usuario"
 	}
