@@ -1,53 +1,46 @@
 import { useTranslation } from "react-i18next";
 
 const styles = {
-	width: "100%",
 	textAlign: "center",
-	fontWeight: "600"
+	fontWeight: "600",
+	fontSize: 16
 };
 
 const MarkerPopup = (props) => {
-	let totalReviews = props.userReviews.goodReviews +
-							props.userReviews.badReviews +
-							props.businessReviews.goodReviews +
-							props.businessReviews.badReviews;
-	let totalGoodReviews = props.userReviews.goodReviews +
-							props.businessReviews.goodReviews;
-	let totalBadReviews = props.userReviews.badReviews +
-							props.businessReviews.badReviews;
+	const BR = props.businessReviews;
+	const UR = props.userReviews;
+	const totalReviews = UR.goodReviews + UR.badReviews + BR.goodReviews + BR.badReviews;
+	const totalGoodReviews = UR.goodReviews + BR.goodReviews;
+	const totalBadReviews = UR.badReviews + BR.badReviews;
 
 	const { t } = useTranslation();
 	const details = (
-		<div style={styles}>
+		<div>
 			{
-			props.businessReviews.badReviews &&
-			<p>{t("markers.businessBadReviews", { n: props.businessReviews.badReviews })}</p>
+			BR.badReviews > 0 &&
+			<p style={styles}>{t("markers.businessBadReviews", { n: BR.badReviews })}</p>
 			}
 			{
-			props.userReviews.badReviews &&
-			<p>{t("markers.userBadReviews", { n: props.userReviews.badReviews })}</p>
+			UR.badReviews > 0 &&
+			<p style={styles}>{t("markers.userBadReviews", { n: UR.badReviews })}</p>
 			}
 			{
-			props.businessReviews.goodReviews &&
-			<p>{t("markers.businessGoodReviews", { n: props.businessReviews.GoodReviews })}</p>
+			BR.goodReviews > 0 &&
+			<p style={styles}>{t("markers.businessGoodReviews", { n: BR.GoodReviews })}</p>
 			}
 			{
-			props.userReviews.goodReviews &&
-			<p>{t("markers.userGoodReviews", { n: props.userReviews.goodReviews })}</p>
+			UR.goodReviews > 0 &&
+			<p style={styles}>{t("markers.userGoodReviews", { n: UR.goodReviews })}</p>
 			}
 		</div>
 	);
-	const summary = (
-		<div style={styles}>
-			{t("markers.summary.total")}: {totalReviews},
-			{t("markers.summary.good")}: {totalGoodReviews},
-			{t("markers.summary.bad")}: {totalBadReviews}
-		</div>
-	);
+	const summary = `${t("markers.summary.total")}: ${totalReviews}, ` +
+		 `${t("markers.summary.good")}: ${totalGoodReviews}, ` +
+		 `${t("markers.summary.bad")}: ${totalBadReviews}`;
 	return (
 		<div>
 			{details}
-			{summary}
+			<p style={styles}>{summary}</p>
 		</div>
 	);
 }
