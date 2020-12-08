@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import "./comments.css";
 
 const Presentation = (props) => {
 	const { t } = useTranslation();

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import "./features.css";
 
 const Presentation = (props) => {
 	const { t } = useTranslation();
@@ -37,13 +38,13 @@ const Presentation = (props) => {
 		);
 	}
 	const features = (
-		<div class="features">
+		<div className="features">
 			<h2>{t("learn.features")}</h2>
 			<ul>{setFeaturesList(props.features)}</ul>
 		</div>
 	);
 	return (
-		<div class="container">
+		<div className="container">
 			<h1>{t("learn.heading")}</h1>
 			{keyFeatures}
 			{features}

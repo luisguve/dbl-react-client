@@ -1,3 +1,5 @@
+import "./samples.css";
+
 const Presentation = (props) => {
 	if (!props.front) {
 		return null;

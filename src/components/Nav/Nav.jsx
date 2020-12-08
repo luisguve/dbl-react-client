@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import srvAddr from "./../../data/srv";
 import sendLocation from "./../../services/location";
+import "./nav.css";
 
 const Presentation = (props) => {
 	const [ loginUsername, setLoginUsername ] = useState("");

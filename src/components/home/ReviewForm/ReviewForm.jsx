@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import srvAddr from "./../../../data/srv";
+import "./review_form.css";
 
 const ratings = [5, 4, 3, 2, 1];
 

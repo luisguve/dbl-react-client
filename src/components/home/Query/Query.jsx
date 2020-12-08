@@ -3,24 +3,42 @@ import { useState, useEffect } from "react";
 import srvAddr from "./../../../data/srv";
 import denominations from "./../../../data/series";
 import designYears from "./../../../data/design";
+import "./query.css";
 
 const Presentation = (props) => {
 	const { t } = useTranslation();
 	const [ serialNumber, setSerialNumber ] = useState("MK 92243965 C");
 	const [ denom, setDenom ] = useState(denominations[2]);
-	const [ series, setSeries ] = useState(denom.series[0]);
+	const [ series, setSeries ] = useState(denominations[2].series[0]);
 	const [ queryErr, setQueryErr ] = useState("");
 	useEffect(() => {
 		handleSubmit();
 	}, []);
+	useEffect(() => {
+		const value = denom.value;
+		if (!value || !series) {
+			return;
+		}
+		// Update security features' language.
+		const designYear = designYears[value][series];
+		const featuresKey = `usd-${value}.${designYear}`;
+		const secFeatures = t(featuresKey);
+		props.listFeatures(value, series, secFeatures);
+	}, [t]);
 
 	const handleSerialNumber = (e) => {
 		setSerialNumber(e.target.value.toUpperCase());
 	};
 
 	const handleDenom = (e) => {
-		setDenom(e.target.value);
-		setSeries(denom.series[0]);
+		let idx;
+		for (idx = denominations.length - 1; idx >= 0; idx--) {
+			if (denominations[idx].value === parseInt(e.target.value)) {
+				break;
+			}
+		}
+		setDenom(denominations[idx]);
+		setSeries(denominations[idx].series[0]);
 	};
 
 	const handleSeries = (e) => {
@@ -62,40 +80,38 @@ const Presentation = (props) => {
 	}
 
 	return (
-		<div>
-			<div className="query-container uppercase">
-				<h1>{t("query.label")}</h1>
-				<h2 className="tip" dangerouslySetInnerHTML={{ __html: t("query.tip") }} />
-				<form onSubmit={e => {e.preventDefault(); handleSubmit();}}>
-					<div className="inputs">
-						<label>
-							{t("query.serialNumber")}
-							<input type="text" value={serialNumber} onInput={handleSerialNumber} />
-						</label>
-						<label>
-							{t("query.value")}
-							<select value={denom} onChange={handleDenom}>
-								{
-									denominations.map((denomination, idx) => {
-										return <option value={denomination} key={idx}>{denomination.value}</option>
-									})
-								}
-							</select>
-						</label>
-						<label>
-							{t("query.series")}
-							<select value={series} onChange={handleSeries}>
-								{
-									denom.series.map((series, idx) => {
-										return <option value={series} key={idx}>{series}</option>
-									})
-								}
-							</select>
-						</label>
-					</div>
-					<button type="submit" className="uppercase">{t("query.submit")}</button>
-				</form>
-			</div>
+		<div className="container uppercase">
+			<h1>{t("query.label")}</h1>
+			<h2 className="tip" dangerouslySetInnerHTML={{ __html: t("query.tip") }} />
+			<form onSubmit={e => {e.preventDefault(); handleSubmit();}}>
+				<div className="inputs">
+					<label>
+						{t("query.serialNumber")}
+						<input type="text" value={serialNumber} onInput={handleSerialNumber} />
+					</label>
+					<label>
+						{t("query.value")}
+						<select value={denom.value} onChange={handleDenom}>
+							{
+								denominations.map((denom, idx) => {
+									return <option value={denom.value} key={idx}>{denom.value}</option>
+								})
+							}
+						</select>
+					</label>
+					<label>
+						{t("query.series")}
+						<select value={series} onChange={handleSeries}>
+							{
+								denom.series.map((series, idx) => {
+									return <option value={series} key={idx}>{series}</option>
+								})
+							}
+						</select>
+					</label>
+				</div>
+				<button type="submit" className="uppercase">{t("query.submit")}</button>
+			</form>
 			{
 				queryErr &&
 				<div className="get-err-box">

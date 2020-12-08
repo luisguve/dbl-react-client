@@ -53,16 +53,29 @@ const Presentation = (props) => {
 	switch (props.typeOfAccount) {
 		case "regular":
 		case "admin":
-			myGoodReview = setMyGoodReview(props.userId, props.userReviews);
-			myBadReview = setMyBadReview(props.userId, props.userReviews);
+			if (props.userReviews.goodReviews) {
+				myGoodReview = setMyGoodReview(props.userId, props.userReviews);
+			}
+			if (props.userReviews.badReviews) {
+				myBadReview = setMyBadReview(props.userId, props.userReviews);
+			}
 			break;
 		case "business":
-			myGoodReview = setMyGoodReview(props.userId, props.businessReviews);
-			myBadReview = setMyBadReview(props.userId, props.businessReviews);
+			if (props.businessReviews.goodReviews) {
+				myGoodReview = setMyGoodReview(props.userId, props.businessReviews);
+			}
+			if (props.businessReviews.badReviews) {
+				myBadReview = setMyBadReview(props.userId, props.businessReviews);
+			}
 		break;
 		default:
 			console.log("Unknown type of account:", props.typeOfAccount);
 	}
+
+	const brBR = props.businessReviews.badReviews;
+	const brGR = props.businessReviews.goodReviews;
+	const urBR = props.userReviews.badReviews;
+	const urGR = props.userReviews.goodReviews;
 
 	return (
 		<div>
@@ -70,10 +83,10 @@ const Presentation = (props) => {
 				<h3>{props.billInfo.serialNumber} - ${props.billInfo.value} - series {props.billInfo.series}</h3>
 				<h3>{t("review.totalReviews", { n : props.totalReviews } )}</h3>
 				<div className="reviews-summary">
-					<h4 className="text-left">{t("review.businessBadReviews", { n : props.businessReviews.badReviews.length } )}</h4>
-					<h4 className="text-left">{t("review.businessGoodReviews", { n : props.businessReviews.goodReviews.length } )}</h4>
-					<h4 className="text-left">{t("review.userBadReviews", { n : props.userReviews.badReviews.length } )}</h4>
-					<h4 className="text-left">{t("review.userGoodReviews", { n : props.userReviews.goodReviews.length } )}</h4>
+					<h4 className="text-left">{t("review.businessBadReviews", { n : brBR ? brBR.length : 0 } )}</h4>
+					<h4 className="text-left">{t("review.businessGoodReviews", { n : brGR ? brGR.length : 0 } )}</h4>
+					<h4 className="text-left">{t("review.userBadReviews", { n : urBR ? urBR.length : 0 } )}</h4>
+					<h4 className="text-left">{t("review.userGoodReviews", { n : urGR ? urGR.length : 0 } )}</h4>
 				</div>
 				<h4>{t("review.rating")}: {props.avgRating}/5</h4>
 				<h4>{t("review.comments", { n: props.comments.length } )}</h4>

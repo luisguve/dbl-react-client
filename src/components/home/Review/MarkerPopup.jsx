@@ -1,5 +1,11 @@
 import { useTranslation } from "react-i18next";
 
+const styles = {
+	width: "100%",
+	textAlign: "center",
+	fontWeight: "600"
+};
+
 const MarkerPopup = (props) => {
 	let totalReviews = props.userReviews.goodReviews +
 							props.userReviews.badReviews +
@@ -12,7 +18,7 @@ const MarkerPopup = (props) => {
 
 	const { t } = useTranslation();
 	const details = (
-		<div>
+		<div style={styles}>
 			{
 			props.businessReviews.badReviews &&
 			<p>{t("markers.businessBadReviews", { n: props.businessReviews.badReviews })}</p>
@@ -32,7 +38,7 @@ const MarkerPopup = (props) => {
 		</div>
 	);
 	const summary = (
-		<div>
+		<div style={styles}>
 			{t("markers.summary.total")}: {totalReviews},
 			{t("markers.summary.good")}: {totalGoodReviews},
 			{t("markers.summary.bad")}: {totalBadReviews}

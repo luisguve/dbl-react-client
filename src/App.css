@@ -17,314 +17,66 @@
   color: #61dafb;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-  margin-top: 20px;
-  padding: 10px 0;
-  border-top: 1px solid #09f;
-}
-
-@media screen and (max-width: 400) {
-  footer p {
-    text-align: center;
-  }
-}
-
-.choose-locale {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.choose-locale .select {
-  margin: 0 1rem 1rem;
-}
-
-.about.container, .business.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about .row, .business .row {
-  width: 70%;
-}
-
-.about p, .about ul, .business p {
-  text-align: left;
-  font-size: 22px;
-}
-
-nav {
-  display: flex;
-  border-bottom: 1px solid #09f;
-}
-nav .container {
-  display: flex;
-  justify-content: center;
+html, body {
+  position: relative;
   width: 100%;
+  height: 100%;
 }
-nav .user-cta {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 80%;
-}
-nav .user-cta .forms {
-  display: flex;
-  justify-content: space-around;
-}
-nav .business {
-  width: 10%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 14px;
-  border-left: 1px solid #09f;
-  padding: 5px;
-  text-align: center;
-}
-nav .links {
-  width: 10%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 19px;
-  border-left: 1px solid #09f;
-}
-/* Hide the link that should open and close the nav on small screens */
-nav .icon {
-  display: none;
-}
-nav .user-cta .login-section {
-  border-right: 1px solid #09f;
-}
-nav .user-cta .form {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-}
-nav .user-cta .form .left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-}
-nav .user-cta .form .right {
-  width: 80%;
-}
-nav .inputs {
-  display: flex;
-}
-nav label {
-  display: flex;
-  flex-direction: column;
-}
-nav .user-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-nav .user-info button {
-  margin-left: 10px;
-}
-nav button {
+
+body {
+  color: #333;
   margin: 0;
-}
-nav input {
-  margin: 0;
-  margin-right: 0.5em;
-}
-nav .btn-info {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0.5em 0;
-}
-nav .btn-info p {
-  margin: 0;
-  margin-left: 10px;
-}
-@media screen and (max-width: 1200px) {
-  nav .user-cta .form {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  nav .user-cta .form .left {
-    width: 100%;
-  }
-  nav .user-cta .form .left .label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-    border: 1px solid #09f;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    width: 20%;
-  }
-  nav .user-cta .form .right {
-    display: none;
-  }
-}
-@media screen and (max-width: 1150px) {
-  nav .user-cta {
-    width: 70%;
-  }
-  nav .business {
-    width: 15%;
-  }
-  nav .links {
-    width: 15%;
-  }
-  nav .user-cta .form .right {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1090px) {
-  nav .user-cta .form .right form {
-    display: flex;
-    flex-direction: column;
-  }
-  nav .user-cta .form .right form .inputs {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 900px) {
-  nav .user-cta .form .left .label {
-    width: 35%;
-  }
-}
-@media screen and (max-width: 830px) {
-  nav .user-cta {
-    width: 64%;
-  }
-  nav .business {
-    width: 18%;
-  }
-  nav .links {
-    width: 18%;
-  }
-}
-@media screen and (max-width: 700px) {
-  nav .user-cta {
-    width: 58%;
-  }
-  nav .business {
-    width: 22%;
-  }
-  nav .links {
-    width: 20%;
-  }
-  nav .user-cta .form .left .label {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
-  nav .user-cta {
-    width: 100%;
-  }
-  nav .business, nav .links {
-    display: none;
-  }
-  nav .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 55px;
-  }
-}
-@media screen and (max-width: 500px) {
-  nav .user-cta .form.login-section {
-    border-right: none;
-  }
-  nav .user-cta .form-placeholder {
-    display: none;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: 170px;
-    grid-template-areas: ". inputs inputs .";
-  }
+  padding: 8px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-/* The "responsive" class is added to the nav with JavaScript when the user 
-   clicks on the icon. This class makes the nav look good on small screens
-   (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  nav.responsive .container {
-    flex-direction: column;;
-  }
-  nav.responsive .business, nav.responsive .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    border-left: none;
-    padding: 0 0 0 10px;
-    font-size: 16px;
-  }
+a {
+  color: rgb(0,100,200);
+  text-decoration: none;
 }
 
-.active-input {
-  display: flex;
-  flex-direction: column;
-  grid-area: inputs;
+a:hover {
+  text-decoration: underline;
 }
 
-@media screen and (max-width: 500px) {
-  .user-cta .form-placeholder.active-grid {
-    display: grid;
-  }
-  .active-input form {
-    display: flex;
-    flex-direction: column;
-  }
-  .active-input form .inputs {
-    flex-direction: column;
-  }
-  .hide-below-500 {
-    display: none;
-  }
-  ul ul {
-    padding-left: 10px;
-  }
+a:visited {
+  color: rgb(0,80,160);
 }
 
-.uppercase {
-  text-transform: uppercase;
+label {
+  display: block;
 }
-.query-container h1 {
-  color: #777;
-  font-size: 4em;
-  font-weight: 100;
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
-.query-container h2.tip {
-  color: #555;
-  font-size: 1.2em;
-  font-weight: 400;
-  text-transform: initial;
+
+input:disabled {
+  color: #ccc;
 }
-.query-container form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
 }
-.query-container label {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+
+button:disabled {
+  color: #999;
 }
-.query-container .get-err-box {
-  border: 1px solid red;
-  border-radius: 10px;
+
+button:not(:disabled):active {
+  background-color: #ddd;
 }
-@media (max-width: 321px) {
-  .query-container h1 {
-    font-size: 3em;
-  }
+
+button:focus {
+  border-color: #666;
 }
