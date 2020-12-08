@@ -25,6 +25,10 @@ const Presentation = (props) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		if (typeOfReview === badReview && !defect.length) {
+			alert(t("reviewForm.indicateDefects"));
+			return;
+		}
 		const now = new Date().toLocaleString();
 		const data = {
 			billInfo: props.billInfo,
