@@ -84,6 +84,7 @@
 			"subject": "Concepto",
 			"to": "Para"
 		},
+		"indicateDefects": "Debes indicar al menos un defecto",
 		"isCounterfeit": "Es falso",
 		"isGenuine": "Es auténtico",
 		"label": "Envía una revisión",

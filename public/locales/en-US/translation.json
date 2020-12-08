@@ -84,6 +84,7 @@
 			"subject": "Subject",
 			"to": "To"
 		},
+		"indicateDefects": "You must indicate at least one defect",
 		"isCounterfeit": "is counterfeit",
 		"isGenuine": "is authentic",
 		"label": "Send a review",
