@@ -30,11 +30,11 @@ function setDefaultReviews(reviews) {
 			badReviews: [],
 		}
 	}
-	let result = {};
-	if (!reviews.goodReviews) {
+	const result = Object.assign({}, reviews);
+	if (!result.goodReviews) {
 		result.goodReviews = [];
 	}
-	if (!reviews.badReviews) {
+	if (!result.badReviews) {
 		result.badReviews = [];
 	}
 	return result;
@@ -132,7 +132,7 @@ function setMarkerLocations(r) {
 	const BR = r.businessReviews;
 	const UR = r.userReviews
 	if (!BR || !UR) {
-		return null;
+		return [];
 	}
 	const markerLocationsKeys = {};
 	if (BR.goodReviews) {
