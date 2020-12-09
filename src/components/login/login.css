@@ -1,0 +1,17 @@
+.form-container h1 {
+	text-transform: capitalize;
+}
+.form-container {
+	display: flex;
+	flex-direction: column;
+}
+.form-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form-container label {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
