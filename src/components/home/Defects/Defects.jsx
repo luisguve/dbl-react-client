@@ -18,7 +18,7 @@ const Presentation = (props) => {
 			)
 		});
 
-		const className = "defect " + idx % 2 === 0 ? "even" : "odd";
+		const className = "defect " + (idx % 2 === 0 ? "even" : "odd");
 		return (
 			<li className={className} key={idx}>
 				<h2>{defect.label}</h2>
