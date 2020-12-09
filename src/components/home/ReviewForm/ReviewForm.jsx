@@ -20,7 +20,7 @@ const Presentation = (props) => {
 		return null;
 	}
 	if (!props.isLoggedIn) {
-		return <h1>{t("reviewForm.askForLogin")}</h1>;
+		return <h1 className="ask-for-login">{t("reviewForm.askForLogin")}</h1>;
 	}
 
 	const handleSubmit = (e) => {
