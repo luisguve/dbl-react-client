@@ -28,9 +28,11 @@ const Presentation = (props) => {
 
 	if (!props.totalReviews) {
 		return (
-			<div className="no-reviews">
-				<h3>{props.billInfo.serialNumber} - ${props.billInfo.value} - series {props.billInfo.series}</h3>
-				<h4>{t("review.noReviews")}</h4>
+			<div className="review-container">
+				<div className="no-reviews">
+					<h3>{props.billInfo.serialNumber} - ${props.billInfo.value} - series {props.billInfo.series}</h3>
+					<h4>{t("review.noReviews")}</h4>
+				</div>
 			</div>
 		);
 	}
