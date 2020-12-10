@@ -1,2 +1,2 @@
-const srvAddr = "http://localhost:8000";
+const srvAddr = "https://dollarblacklist.xyz";
 export default srvAddr;
