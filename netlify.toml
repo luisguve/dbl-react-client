@@ -1,0 +1,9 @@
+[[redirects]]
+	from = "/*"
+	to = "/index.html"
+	status = 200
+[[redirects]]
+	from = "https://dollarblacklist.netlify.app"
+	to = "https://dollarblacklist.com"
+	status = 301
+	force = true
