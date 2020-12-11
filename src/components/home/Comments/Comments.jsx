@@ -21,7 +21,7 @@ const Presentation = (props) => {
 
 	const buttonLabel = t("review.comments", { n: props.comments.length } );
 
-	const comments = props.comments.map((c, idx) => {
+	const comments = props.comments.reverse().map((c, idx) => {
 		return (
 			<p key={idx}><strong>{t("comments.id", {id: c.typeOfAccount})}:</strong> {c.content}</p>
 		);
