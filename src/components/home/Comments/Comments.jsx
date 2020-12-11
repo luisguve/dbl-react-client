@@ -23,7 +23,7 @@ const Presentation = (props) => {
 
 	const comments = props.comments.map((c, idx) => {
 		return (
-			<p key={idx}><strong>{t("comments.id", {id: c.typeOfAccount})}</strong>{c.content}</p>
+			<p key={idx}><strong>{t("comments.id", {id: c.typeOfAccount})}:</strong> {c.content}</p>
 		);
 	});
 	return (
