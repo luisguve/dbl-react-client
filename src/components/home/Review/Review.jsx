@@ -112,6 +112,7 @@ const Presentation = (props) => {
 					<h3>{t("review.myBadReview", { date: myBadReview.date } )}</h3>
 				</div>
 			}
+			<h2>{t("map.heading")}</h2>
 			<Map markerLocations={props.markerLocations} />
 		</div>
 	);
