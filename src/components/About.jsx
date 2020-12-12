@@ -9,7 +9,10 @@ const About = () => {
 		+ t("about.users")
 		+ t("about.reviews")
 		+ t("about.reviewsNotes")
-		+ t("about.securityFeatures");
+		+ t("about.securityFeatures")
+		+ t("about.motivation")
+		+ t("about.author")
+		+ t("about.contact");
 	const about = {
 		__html: content
 	};
