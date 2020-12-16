@@ -12,8 +12,8 @@ const Presentation = (props) => {
 	const [ queryErr, setQueryErr ] = useState("");
 	useEffect(() => {
 		handleSubmit();
+		// eslint-disable-next-line
 	}, []);
-	// eslint-disable-next-line
 	useEffect(() => {
 		const value = denom.value;
 		if (!value || !series) {
@@ -80,19 +80,17 @@ const Presentation = (props) => {
 		});
 	}
 
-	const labelClass = "flex flex-col items-start";
-
 	return (
 		<div className="uppercase">
 			<h1>{t("query.label")}</h1>
 			<h2 className="text-gray-500 text-xl font-normal normal-case mb-4" dangerouslySetInnerHTML={{ __html: t("query.tip") }} />
 			<form className="flex flex-col items-center" onSubmit={e => {e.preventDefault(); handleSubmit();}}>
-				<div className="inputs">
-					<label className={labelClass}>
+				<div className="w-3/4 sm:w-2/5 md:w-1/3">
+					<label className="flex flex-col">
 						{t("query.serialNumber")}
 						<input type="text" value={serialNumber} onInput={handleSerialNumber} />
 					</label>
-					<label className={labelClass}>
+					<label className="flex flex-col items-start">
 						{t("query.value")}
 						<select value={denom.value} onChange={handleDenom}>
 							{
@@ -102,7 +100,7 @@ const Presentation = (props) => {
 							}
 						</select>
 					</label>
-					<label className={labelClass}>
+					<label className="flex flex-col items-start">
 						{t("query.series")}
 						<select value={series} onChange={handleSeries}>
 							{
@@ -113,7 +111,7 @@ const Presentation = (props) => {
 						</select>
 					</label>
 				</div>
-				<button type="submit" className="uppercase">{t("query.submit")}</button>
+				<button type="submit" className="w-3/4 sm:w-2/5 md:w-1/3">{t("query.submit")}</button>
 			</form>
 			{
 				queryErr &&

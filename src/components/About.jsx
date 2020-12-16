@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import React from "react";
-import "./about.css";
 
 const About = () => {
 	const { t } = useTranslation();
@@ -17,9 +16,9 @@ const About = () => {
 		__html: content
 	};
 	return (
-		<div className="about-container">
-			<div className="row">
-				<h1>DollarBlacklist</h1>
+		<div className="flex flex-col items-center">
+			<div className="w-2/3">
+				<h1 className="text-3xl sm:text-5xl mb-5">DollarBlacklist</h1>
 				<div dangerouslySetInnerHTML={about} />
 			</div>
 		</div>

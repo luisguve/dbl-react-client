@@ -1,6 +1,6 @@
 {
 	"business": {
 		"heading": "¿Eres un comercio? danos algunos datos para verificarlo",
-		"body": "<p>Las cuentas de tipo comercio tienen más credibilidad en cuanto a las revisiones de billetes que las cuentas de usuarios regulares, por lo que los comercios deben demostrarnos que verdaderamente lo son.</p><p>En esta página, suponemos que le pedimos algunos datos al usuario en un formulario, así como su correo. Un adminisrador verificará los datos, generará un link de registro de comercio y se lo enviará por correo al usuario.</p>"
+		"body": "<p class=\"text-left text-xl sm:text-2xl\">Las cuentas de tipo comercio tienen más credibilidad en cuanto a las revisiones de billetes que las cuentas de usuarios regulares, por lo que los comercios deben demostrarnos que verdaderamente lo son.</p><p class=\"text-left text-xl sm:text-2xl\">En esta página, suponemos que le pedimos algunos datos al usuario en un formulario, así como su correo. Un adminisrador verificará los datos, generará un link de registro de comercio y se lo enviará por correo al usuario.</p>"
 	}
 }

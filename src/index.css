@@ -44,18 +44,9 @@ button {
   @apply text-gray-500;
   @apply bg-gray-50;
   @apply outline-none;
-}
-
-button:disabled {
-  @apply text-gray-50;
-}
-
-button:not(:disabled):active {
-  @apply bg-gray-200;
-}
-
-button:focus {
-  @apply border-gray-500;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-300;
+  @apply active:bg-gray-100;
+  @apply rounded-2xl;
 }
 
 h1 {
@@ -72,4 +63,20 @@ h1 {
 
 img {
   @apply max-w-full;
+}
+
+/* The "responsive" class is added to the nav with JavaScript when the user 
+clicks on the icon. This class makes the nav look good on small screens
+(display the links vertically instead of horizontally) */
+@media screen and (max-width: 767px) {
+  nav.responsive .container {
+    @apply flex-col;
+  }
+  nav.responsive .business, nav.responsive .links {
+    @apply flex flex-col justify-start items-start;
+    @apply w-full;
+    @apply border-l-0;
+    @apply pl-2.5;
+    @apply text-xl;
+  }
 }

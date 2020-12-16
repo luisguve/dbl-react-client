@@ -3,14 +3,16 @@ import { useTranslation } from "react-i18next";
 const setFeaturesList = (features, borderColor, bgColor) => {
 	const imgClass = "max-w-11/12 sm:my-1.5";
 	const samplesClass = "flex flex-row items-center justify-around sm:flex-col sm:items-center sm:justify-around " +
-	" w-full sm:w-1/4 px-5 sm:px-0";
+	" w-full sm:w-1/4 px-5 sm:px-0 space-x-2 mt-2 sm:mt-0";
 	const pClass = "text-left text-xl sm:text-2xl w-full sm:w-2/3 px-5 pb-3";
 
 	return features.map((f, idx) => {
 		const samples = f.img.map((img, idx) => {
 			const src = `images/${img}`;
 			return (
-				<img alt="" key={idx} src={src} className={imgClass}/>
+				<div key={idx}>
+					<img alt="" src={src} className={imgClass}/>
+				</div>
 			);
 		});
 		const liClass = idx % 2 === 0 ? `even border-solid border-2 border-${borderColor} rounded-lg` : `odd bg-${bgColor}`;

@@ -137,11 +137,11 @@ const Presentation = (props) => {
 	});
 	const reviewInput = typeOfReview === goodReview ? (
 		<div className="flex flex-col items-center w-full">
-			<label className="w-full sm:w-3/4 flex items-center justify-around text-xl">
-				{t("reviewForm.billState")}
-				<select value={rating} onChange={handleChangeRating}>
+			<label className="w-full sm:w-3/4 flex items-center justify-center space-x-2 text-xl">
+				<div>{t("reviewForm.billState")}</div>
+				<div><select value={rating} onChange={handleChangeRating}>
 				{ ratingOptions }
-				</select>
+				</select></div>
 			</label>
 		</div>
 	) : (
