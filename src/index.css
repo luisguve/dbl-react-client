@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  @apply text-blue-500;
+  @apply no-underline;
+}
+
+a:hover {
+  @apply underline;
+}
+
+a:visited {
+  @apply text-blue-700;
+}
+
+label {
+  @apply block;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  @apply p-2;
+  @apply m-0;
+  @apply mb-2;
+  @apply box-border;
+  @apply border-2;
+  @apply border-solid;
+  @apply border-gray-400;
+  @apply rounded;
+}
+
+input:disabled {
+  @apply text-gray-400;
+}
+
+button {
+  @apply text-gray-500;
+  @apply bg-gray-50;
+  @apply outline-none;
+}
+
+button:disabled {
+  @apply text-gray-50;
+}
+
+button:not(:disabled):active {
+  @apply bg-gray-200;
+}
+
+button:focus {
+  @apply border-gray-500;
+}
+
+h1 {
+  @apply text-gray-500;
+  @apply text-3xl sm:text-5xl;
+  @apply font-thin;
+}
+
+@media (max-width: 321px) {
+  .query-container h1 {
+    font-size: 3em;
+  }
+}
+
+img {
+  @apply max-w-full;
 }

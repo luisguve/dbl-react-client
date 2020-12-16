@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import srvAddr from "./../../../data/srv";
 import denominations from "./../../../data/series";
 import designYears from "./../../../data/design";
-import "./query.css";
 
 const Presentation = (props) => {
 	const { t } = useTranslation();
@@ -14,6 +13,7 @@ const Presentation = (props) => {
 	useEffect(() => {
 		handleSubmit();
 	}, []);
+	// eslint-disable-next-line
 	useEffect(() => {
 		const value = denom.value;
 		if (!value || !series) {
@@ -24,6 +24,7 @@ const Presentation = (props) => {
 		const featuresKey = `usd-${value}.${designYear}`;
 		const secFeatures = t(featuresKey);
 		props.listFeatures(value, series, secFeatures);
+		// eslint-disable-next-line
 	}, [t]);
 
 	const handleSerialNumber = (e) => {
@@ -79,17 +80,19 @@ const Presentation = (props) => {
 		});
 	}
 
+	const labelClass = "flex flex-col items-start";
+
 	return (
-		<div className="query-container uppercase">
+		<div className="uppercase">
 			<h1>{t("query.label")}</h1>
-			<h2 className="tip" dangerouslySetInnerHTML={{ __html: t("query.tip") }} />
-			<form onSubmit={e => {e.preventDefault(); handleSubmit();}}>
+			<h2 className="text-gray-500 text-xl font-normal normal-case mb-4" dangerouslySetInnerHTML={{ __html: t("query.tip") }} />
+			<form className="flex flex-col items-center" onSubmit={e => {e.preventDefault(); handleSubmit();}}>
 				<div className="inputs">
-					<label>
+					<label className={labelClass}>
 						{t("query.serialNumber")}
 						<input type="text" value={serialNumber} onInput={handleSerialNumber} />
 					</label>
-					<label>
+					<label className={labelClass}>
 						{t("query.value")}
 						<select value={denom.value} onChange={handleDenom}>
 							{
@@ -99,7 +102,7 @@ const Presentation = (props) => {
 							}
 						</select>
 					</label>
-					<label>
+					<label className={labelClass}>
 						{t("query.series")}
 						<select value={series} onChange={handleSeries}>
 							{
@@ -114,7 +117,7 @@ const Presentation = (props) => {
 			</form>
 			{
 				queryErr &&
-				<div className="get-err-box">
+				<div className="border-solid border-2 border-red-600">
 					<p>{queryErr}</p>
 				</div>
 			}

@@ -6,15 +6,6 @@ const languages = [
 	{code: "es-ES", label: "Español"}
 ];
 
-const containerStyle = {
-	marginTop: 10,
-	display: "flex",
-	justifyContent: "center"
-};
-const selectStyle = {
-	margin: "0 1rem 1rem"
-};
-
 const LocaleSwitcher = (props) => {
 	const { i18n } = useTranslation();
 	const switchLang = (e) => {
@@ -22,8 +13,8 @@ const LocaleSwitcher = (props) => {
 	}
 
 	return (
-	<div style={containerStyle}>
-		<select value={props.lang} onChange={switchLang} style={selectStyle}>
+	<div className="mt-2.5 flex justify-center">
+		<select value={props.lang} onChange={switchLang} className="m-4 mt-0">
 		{
 			languages.map((lang, idx) => {
 				return <option value={lang.code} key={idx}>{lang.label}</option>

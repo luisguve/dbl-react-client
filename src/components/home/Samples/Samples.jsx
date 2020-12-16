@@ -1,5 +1,3 @@
-import "./samples.css";
-
 const Presentation = (props) => {
 	if (!props.front) {
 		return null;
@@ -13,14 +11,10 @@ const Presentation = (props) => {
 		alt: `back of ${props.value} series ${props.series} note`
 	};
 	return (
-		<div className="samples-container">
-			<div className="samples">
-				<div className="sample-note">
-					<img src={front.src} alt={front.alt} />
-				</div>
-				<div className="sample-note">
-					<img src={back.src} alt={back.alt} />
-				</div>
+		<div className="flex flex-col items-center">
+			<div className="mt-4 flex flex-col items-center w-full sm:w-4/5">
+				<img className="max-w-full mb-3" src={front.src} alt={front.alt} />
+				<img className="max-w-full" src={back.src} alt={back.alt} />
 			</div>
 		</div>
 	);
