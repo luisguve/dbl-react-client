@@ -19,18 +19,16 @@
 @media (max-width: 426px) {
 	.leaflet-container {
 		height: 400px;
-		width: 400px;
+		width: 100%;
 	}
 }
 @media (max-width: 376px) {
 	.leaflet-container {
 		height: 350px;
-		width: 350px;
 	}
 }
 @media (max-width: 321px) {
 	.leaflet-container {
 		height: 310px;
-		width: 310px;
 	}
 }
