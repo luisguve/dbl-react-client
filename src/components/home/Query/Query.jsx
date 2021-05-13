@@ -76,7 +76,7 @@ const Presentation = (props) => {
 			}
 		}).catch(err => {
 			console.log("Request failed:", err);
-			setQueryErr(err);
+			setQueryErr("Unable to reach server");
 		});
 	}
 
@@ -113,12 +113,12 @@ const Presentation = (props) => {
 				</div>
 				<button type="submit" className="w-3/4 sm:w-2/5 md:w-1/3">{t("query.submit")}</button>
 			</form>
-			{
+			{/*
 				queryErr &&
-				<div className="border-solid border-2 border-red-600">
-					<p>{queryErr}</p>
+				<div className="text-center">
+					<p className="inline-block p-1 border-solid border-2 border-red-600">{queryErr}</p>
 				</div>
-			}
+			*/}
 		</div>
 	);
 }
