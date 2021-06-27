@@ -64,16 +64,18 @@ const Presentation = (props) => {
 			headers: {"Content-type": "application/json; charset=UTF-8"},
 			credentials: "include"
 		}).then(async res => {
-			if (res.ok) {
+			if (res.ok || res.status === 404) {
+				console.log("here")
 				const result = await res.json();
 				props.listReview(result);
 
 				if (result.defects) {
 					props.listDefects(result.defects);
 				}
-			} else {
-				setQueryErr(await res.text());
+				return
 			}
+			// Set error
+			setQueryErr(await res.text());
 		}).catch(err => {
 			console.log("Request failed:", err);
 			setQueryErr("Unable to reach server");
